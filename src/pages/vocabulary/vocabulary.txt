@@ -1,113 +1,113 @@
 自然地理
 +++
-atmosphere|n.|大气层；氛围|The approaching examination created a tense atmosphere on the campus
-hydrosphere|n.|水圈；大气中的水汽|All the water of the earth's surface is included in the hydrosphere
-lithosphere|n.|岩石圈|The lithosphere and the hydrosphere together form the earth's surface
+atmosphere|n.|大气层；氛围|The approaching examination created a tense atmosphere on the campus|拓展：atmospheric adj. 大气的；有氛围的；atmospheric pressure 气压
+hydrosphere|n.|水圈；大气中的水汽|All the water of the earth's surface is included in the hydrosphere|拓展：hydro- 作为前缀表示“水相关的”；hydrospheric adj. 水圈的
+lithosphere|n.|岩石圈|The lithosphere and the hydrosphere together form the earth's surface|拓展：litho- 前缀表“岩石”；lithospheric adj. 岩石圈的
 ---
-oxygen|n.|氧气|Hydrogen and Oxygen are gases
-oxide|n.|氧化物|Oxide is a part of our daily life
-carbon dioxide|n.|二氧化碳|Soft drinks usually contain carbon dioxide
-hydrogen|n.|氢气|Two parts hydrogen, one part oxygen, you'll get water everytime
+oxygen|n.|氧气|Hydrogen and Oxygen are gases|拓展：oxy- 前缀表“氧相关”；oxygenate v. 供氧；oxygen mask 氧气面罩
+oxide|n.|氧化物|Oxide is a part of our daily life|拓展：常见搭配如 iron oxide（氧化铁）、nitrogen oxide（氮氧化物）；oxidize v. 氧化
+carbon dioxide|n.|二氧化碳|Soft drinks usually contain carbon dioxide|拓展：缩写为 CO₂；是植物光合作用的原料；carbon dioxide emission 二氧化碳排放
+hydrogen|n.|氢气|Two parts hydrogen, one part oxygen, you'll get water every time|拓展：缩写为 H₂；hydrogen bomb 氢弹；hydrogen fuel cell 氢燃料电池
 ---
-core|n.|中心；核心；地核|He is the core of the working group
-crust|n.|地壳；外壳|The crust on the snow was thick enough for us to walk on it
-mantle|n./v.|地幔；斗篷；披风；覆盖|Parents often use mantles for their babies to keep warm
+core|n.|中心；核心；地核|He is the core of the working group|拓展：core area 核心区域；core technology 核心技术；地核分为 outer core（外核）和 inner core（内核）
+crust|n.|地壳；外壳|The crust on the snow was thick enough for us to walk on it|拓展：earth's crust 地壳；crustal movement 地壳运动；bread crust 面包皮
+mantle|n./v.|地幔；斗篷；披风；覆盖|Parents often use mantles for their babies to keep warm|拓展：earth's mantle 地幔；mantle of snow 一层雪；mantle sth. with 用...覆盖某物
 ---
-longitude|n.|经度|The captain determine the latitude and longitude of his ship
-latitude|n.|维度|Our position is 40 degrees north latitude
-horizon|n.|地平线；[~s]眼界；见识|I could see a ship on the horizon|horizontal adj. 水平的。broaden sb.'s horizons 开阔眼界
-altitude|n.|海拔；高度|We're currently flying at an altitude of 8,000 meters
+longitude|n.|经度|The captain determined the latitude and longitude of his ship|拓展：east longitude 东经；west longitude 西经；longitudinal adj. 经度的；纵向的
+latitude|n.|纬度|Our position is 40 degrees north latitude|拓展：north latitude 北纬；south latitude 南纬；latitude of action 行动自由
+horizon|n.|地平线；[~s]眼界；见识|I could see a ship on the horizon|拓展：horizontal adj. 水平的；broaden sb.'s horizons 开阔眼界；on the horizon 即将发生的
+altitude|n.|海拔；高度|We're currently flying at an altitude of 8,000 meters|拓展：high altitude 高海拔；altitude sickness 高原反应；altimeter n. 高度计
 ---
-disaster|n.|灾难|There was a great flood disaster in East China|a disaster film/movie 灾难片
-mishap|n.|小灾难|A mishap prevented him from attending the routine company meeting
-catastrophic|adj.|灾难性的|If the forecast had been wrong, the consequences could have been catastrophic
-calamity|n.|灾难；不幸的事|A hurricane would be a calamity for this low-lying coastal region|cause a calamity 酿成灾祸
+disaster|n.|灾难|There was a great flood disaster in East China|拓展：a disaster film/movie 灾难片；natural disaster 自然灾害；disastrous adj. 灾难性的
+mishap|n.|小灾难；意外事故|A mishap prevented him from attending the routine company meeting|拓展：minor mishap 小意外；avoid mishaps 避免意外
+catastrophic|adj.|灾难性的|If the forecast had been wrong, the consequences could have been catastrophic|拓展：catastrophe n. 大灾难；catastrophic damage 灾难性破坏
+calamity|n.|灾难；不幸的事|A hurricane would be a calamity for this low-lying coastal region|拓展：cause a calamity 酿成灾祸；environmental calamity 环境灾难
 ---
-endanger|v.|使遭受危险；危及|If you are work hard without rest, you will endanger your health|endangered adj. 濒临灭绝
-jeopardise/jeopardize|v.|危害；危及|If you are rude to the boss, your chances of success may be jeopardised|jeopardise sb.'s life 危及某人生命
-destructive|adj.|破坏性的；有害的|Jealousy is an extremely destructive emotion
+endanger|v.|使遭受危险；危及|If you work hard without rest, you will endanger your health|拓展：endangered adj. 濒临灭绝的；endangered species 濒危物种；endanger public safety 危害公共安全
+jeopardise/jeopardize|v.|危害；危及|If you are rude to the boss, your chances of success may be jeopardised|拓展：jeopardise sb.'s life 危及某人生命；jeopardise the peace 危及和平；jeopardy n. 危险（in jeopardy 处于危险中）
+destructive|adj.|破坏性的；有害的|Jealousy is an extremely destructive emotion|拓展：destructive power 破坏力；destructive effect 破坏作用；destroy v. 破坏
 ---
-El Nino|n.|厄尔尼诺现象|What changed the equation that year was El Nino
-greenhouse|n.|温室；暖房|The flowers are grown in the greenhouse
-phenomenon|n.|现象|Snow is an almost unknown phenomenon in Egypt|复数形式：phenomena；a natural phenomenon 自然现象；a social phenomenon 社会现象
+El Nino|n.|厄尔尼诺现象|What changed the equation that year was El Nino|拓展：全称 El Nino-Southern Oscillation（厄尔尼诺-南方涛动）；常导致全球气候异常
+greenhouse|n.|温室；暖房|The flowers are grown in the greenhouse|拓展：greenhouse effect 温室效应；greenhouse gas 温室气体；greenhouse cultivation 温室栽培
+phenomenon|n.|现象|Snow is an almost unknown phenomenon in Egypt|拓展：复数形式：phenomena；a natural phenomenon 自然现象；a social phenomenon 社会现象；phenomenal adj. 非凡的；现象级的
 ---
-pebble|n.|鹅卵石|The boy put his hand into the money bag and drew out a pebble
-magnet|n.|磁铁；吸铁石|He picked all the pins up with a magnet|magnetic adj./词的，有磁性的；有吸引力的
-ore|n.|矿石；矿|This mountain area is rich in iron ore
-mineral|n.|矿物；矿物质；矿场|China is rich in mineral resources
+pebble|n.|鹅卵石|The boy put his hand into the money bag and drew out a pebble|拓展：pebble beach 卵石滩；pebbly adj. 多卵石的
+magnet|n.|磁铁；吸铁石；有吸引力的人/事物|He picked all the pins up with a magnet|拓展：magnetic adj. 磁的，有磁性的；有吸引力的；magnetism n. 磁力；吸引力；magnetic field 磁场
+ore|n.|矿石；矿|This mountain area is rich in iron ore|拓展：gold ore 金矿；coal ore 煤矿；ore deposit 矿床；ore processing 矿石加工
+mineral|n.|矿物；矿物质；矿产品|China is rich in mineral resources|拓展：mineral water 矿泉水；mineral nutrition 矿物质营养；mineral deposit 矿藏；mineralogy n. 矿物学
 ---
-marble|n.|大理石|They used marble to build the steps
-quartz|n.|石英|Have you bought the quartz clock?
-granite|n.|花岗岩|His grave is made of granite|bit on granite 白费力气；徒劳无功
+marble|n.|大理石|They used marble to build the steps|拓展：marble statue 大理石雕像；marble floor 大理石地板；artificial marble 人造大理石
+quartz|n.|石英|Have you bought the quartz clock?|拓展：quartz crystal 石英晶体；quartz sand 石英砂；quartz glass 石英玻璃
+granite|n.|花岗岩|His grave is made of granite|拓展：bit on granite 白费力气；徒劳无功；granite rock 花岗岩岩石；granitic adj. 花岗岩的
 ---
-gust|n.|一整狂风；（情感的）迸发|A gust of wind blew the leaves off the trees
-breeze|n.|微分；和风|We are enjoying the cool breeze that comes from the lake
-monsoon|n.|季风；雨季|The monsoon brings rain to us
-gale|n.|大风|We got our roof blown off in a gale last night
+gust|n.|一阵狂风；（情感的）迸发|A gust of wind blew the leaves off the trees|拓展：a gust of anger 一阵怒气；gusty adj. 阵风多的；突发的
+breeze|n.|微风；和风|We are enjoying the cool breeze that comes from the lake|拓展：a light breeze 微风；breezy adj. 有微风的；轻松愉快的；gentle breeze 和风
+monsoon|n.|季风；雨季|The monsoon brings rain to us|拓展：summer monsoon 夏季风；winter monsoon 冬季风；monsoon season 雨季
+gale|n.|大风；狂风|We got our roof blown off in a gale last night|拓展：strong gale 强风；gale warning 大风预警；gusty gale 阵风
 ---
-hurricane|n.|飓风；暴风|The hurricane flung their motorboat upon the rocks
-tornado|n.|龙卷风|When a tornado touches the ground, it does a lot of damage
-typhoon|n.|台风|The typhoon is gathering strength
+hurricane|n.|飓风；暴风|The hurricane flung their motorboat upon the rocks|拓展：hurricane category 飓风等级；hurricane path 飓风路径；大西洋和东北太平洋地区的强热带气旋称 hurricane
+tornado|n.|龙卷风|When a tornado touches the ground, it does a lot of damage|拓展：tornado alley 龙卷风走廊（美国中西部地区）；tornado warning 龙卷风预警
+typhoon|n.|台风|The typhoon is gathering strength|拓展：typhoon signal 台风信号；西北太平洋和南海地区的强热带气旋称 typhoon
 ---
-volcano|n.|火山|The valcano erupted and two small towns were buried under meters of hot ash, mud and bits of molten rock
-erupt|v.|爆发；喷发；（斑疹等）突然出现|Hot lava erupted from the crust
-magma|n.|岩浆|Some types of minerals are made when magma cools and solidifies
-thermodynamic|adj.|热力的；热力学的|His theory violates current thermodynamic laws
+volcano|n.|火山|The volcano erupted and two small towns were buried under meters of hot ash, mud and bits of molten rock|拓展：active volcano 活火山；dormant volcano 休眠火山；extinct volcano 死火山；volcanic adj. 火山的
+erupt|v.|爆发；喷发；（斑疹等）突然出现|Hot lava erupted from the crust|拓展：volcanic eruption 火山喷发；eruption of anger 怒火爆发；eruption of violence 暴力事件爆发
+magma|n.|岩浆|Some types of minerals are made when magma cools and solidifies|拓展：magma chamber 岩浆房；magma flow 岩浆流；lava 是岩浆喷出地表后的名称
+thermodynamic|adj.|热力的；热力学的|His theory violates current thermodynamic laws|拓展：thermodynamics n. 热力学；thermodynamic system 热力系统；thermodynamic equilibrium 热力学平衡
 ---
-smog|n.|烟雾；雾霾|The smog was so bad that school children were adviced to stay indoors
-fume|n./v.|（难闻有害的）烟，气体；发怒，愤怒|Petrol fumes from cars are poisoning the atmosphere
-mist|n.|薄雾；水汽；使视线模糊的东西|She could hardly recognize her son from her mist of tears
+smog|n.|烟雾；雾霾|The smog was so bad that school children were advised to stay indoors|拓展：photochemical smog 光化学烟雾；smoggy adj. 有雾霾的；由 smoke（烟）和 fog（雾）合成
+fume|n./v.|（难闻有害的）烟，气体；发怒，愤怒|Petrol fumes from cars are poisoning the atmosphere|拓展：toxic fumes 有毒烟雾；fume with anger 怒气冲冲；fumigate v. 熏蒸消毒
+mist|n.|薄雾；水汽；使视线模糊的东西|She could hardly recognize her son through the mist of tears|拓展：misty adj. 有雾的；模糊的；mist over 起雾；thin mist 薄雾
 ---
-tsunami|n.|海啸|A terrible tsunami followed the earthquake
-drought|n.|干旱；旱灾|Many areas in Africa have suffered severe drought this year
-flooding|n.|洪水泛滥|Since the flooding began last month, seventeen people have died state wide
-torrent|n.|激流；洪流|A torrent of water poured down the mountain
+tsunami|n.|海啸|A terrible tsunami followed the earthquake|拓展：tsunami warning system 海啸预警系统；通常由海底地震、火山爆发引发
+drought|n.|干旱；旱灾|Many areas in Africa have suffered severe drought this year|拓展：severe drought 严重干旱；drought-resistant adj. 抗旱的；drought relief 抗旱救灾
+flooding|n.|洪水泛滥|Since the flooding began last month, seventeen people have died state-wide|拓展：flash flooding 山洪暴发；flooding control 防洪；flood v. 淹没
+torrent|n.|激流；洪流；滔滔不绝的话|A torrent of water poured down the mountain|拓展：a torrent of abuse 一顿痛骂；torrential adj. 倾泻的；torrential rain 暴雨
 ---
-earthquake|n.|地震|Several countries in Eastern Europe are counting the losses caused by yesterday's earthquake
-seismic|adj.|地震的；地震引起的|The discovery of seismic activity suggests geological activity could provide large amounts of heat and minerals
-avalanche|n.|雪崩|Yesterday's avalanche destroyed several trees
+earthquake|n.|地震|Several countries in Eastern Europe are counting the losses caused by yesterday's earthquake|拓展：earthquake magnitude 地震震级；earthquake epicenter 地震震中；seismic adj. 地震的
+seismic|adj.|地震的；地震引起的|The discovery of seismic activity suggests geological activity could provide large amounts of heat and minerals|拓展：seismic wave 地震波；seismic survey 地震勘探；seismology n. 地震学
+avalanche|n.|雪崩；（大量事物）涌现|Yesterday's avalanche destroyed several trees|拓展：snow avalanche 雪崩；avalanche of letters 大量信件；avalanche control 雪崩防治
 ---
-terrain|n.|地形|He climbed a tree to view the surrounding terrain
-landscape|n./v.|风景；地貌；对...进行景观美化|The trees and the mountains made the landscape very beautiful
-continent|n.|大陆；洲|It is generally thought that Columbus discovered the American continent
+terrain|n.|地形；地势|He climbed a tree to view the surrounding terrain|拓展：mountainous terrain 山地地形；difficult terrain 复杂地形；terrain vehicle 越野车
+landscape|n./v.|风景；地貌；对...进行景观美化|The trees and the mountains made the landscape very beautiful|拓展：natural landscape 自然景观；cultural landscape 人文景观；landscaping n. 景观美化
+continent|n.|大陆；洲|It is generally thought that Columbus discovered the American continent|拓展：seven continents 七大洲；continental adj. 大陆的；continental shelf 大陆架
 ---
-cave|n.|洞穴；山洞|The cave was used by smugglers in the 18th century
-cliff|n.|悬崖；峭壁|The narrow path leads to a wooden hut on the cliff
-glacier|n.|冰川；冰河|The glacier dislocated the great stones
-swamp|n.|沼泽；湿地|In the swamp we were beset by mosquitoes
+cave|n.|洞穴；山洞|The cave was used by smugglers in the 18th century|拓展：cave exploration 洞穴探险；cave dweller 穴居人；limestone cave 石灰岩洞穴
+cliff|n.|悬崖；峭壁|The narrow path leads to a wooden hut on the cliff|拓展：cliff diving 悬崖跳水；cliff face 悬崖壁；precipitous cliff 陡峭的悬崖
+glacier|n.|冰川；冰河|The glacier dislocated the great stones|拓展：glacial adj. 冰川的；极冷的；glacier recession 冰川退缩；continental glacier 大陆冰川
+swamp|n.|沼泽；湿地|In the swamp we were beset by mosquitoes|拓展：swampy adj. 沼泽般的；wetland 湿地（同义替换）；swamp ecosystem 沼泽生态系统
 ---
-delta|n.|三角洲|The Nile Delta used to be a fertile land
-plain|n./adj.|平原；简朴的；明白的|Once there were seventy million buffalo roaming in the great plains
-plateau|n.|高原|The atmosphere is thin on the plateau
-oasis|n.|绿洲；宜人之地|Oasis symbolizes a hope in desert areas
+delta|n.|三角洲|The Nile Delta used to be a fertile land|拓展：Yangtze River Delta 长江三角洲；delta plain 三角洲平原；alluvial delta 冲积三角洲
+plain|n./adj.|平原；简朴的；明白的|Once there were seventy million buffalo roaming in the great plains|拓展：central plain 中原；plain language 简明语言；grassland plain 草原平原
+plateau|n.|高原|The atmosphere is thin on the plateau|拓展：Tibetan Plateau 青藏高原；plateau climate 高原气候；reach a plateau 进入停滞期
+oasis|n.|绿洲；宜人之地|Oasis symbolizes a hope in desert areas|拓展：oasis in the desert 沙漠中的绿洲；oasis city 绿洲城市；复数形式：oases
 ---
-globe|n.|球体；地球仪|There are people in almost every habitable part of this globe
-hemisphere|n.|半球|In the northern hemisphere, you can hardly see the Magellanic Clouds
-equator|n.|赤道|The equator is an imaginary line around the middle of the earth
+globe|n.|球体；地球仪；地球|There are people in almost every habitable part of this globe|拓展：globe theatre 环球剧院；global adj. 全球的；global warming 全球变暖；globe-trotter n. 环球旅行者
+hemisphere|n.|半球|In the northern hemisphere, you can hardly see the Magellanic Clouds|拓展：Northern Hemisphere 北半球；Southern Hemisphere 南半球；eastern hemisphere 东半球
+equator|n.|赤道|The equator is an imaginary line around the middle of the earth|拓展：equatorial adj. 赤道的；equatorial climate 赤道气候；cross the equator 穿越赤道
 ---
-arctic|adj./n.|北极的；极冷的；北极地区；北极|The polar bears' habitat is the icy waters of the Arctic
-Antarctic|adj./n.|南极的；南极地区；南极洲|Because of the extreme cold, the environment in the Antarctic is uniquely fragile
-pole|n.|（地）极；截然相反的两极之一|English is spoken from pole to pole|the South Pole 南极
-polar|adj.|极地的；近极地的；对立的|In these polar regions, the balance of nature has already been disrupted|a polar bear 北极熊；polarize v. 使两极分化
-axis|n.|轴；轴线|The earth's axis is the line between the North and the South Poles
+arctic|adj./n.|北极的；极冷的；北极地区；北极|The polar bears' habitat is the icy waters of the Arctic|拓展：Arctic Ocean 北冰洋；Arctic circle 北极圈；arctic weather 严寒天气
+Antarctic|adj./n.|南极的；南极地区；南极洲|Because of the extreme cold, the environment in the Antarctic is uniquely fragile|拓展：Antarctic Ocean 南冰洋；Antarctic ice sheet 南极冰盖；Antarctic Peninsula 南极半岛
+pole|n.|（地）极；截然相反的两极之一|English is spoken from pole to pole|拓展：the South Pole 南极；the North Pole 北极；magnetic pole 磁极；pole apart 截然相反
+polar|adj.|极地的；近极地的；对立的|In these polar regions, the balance of nature has already been disrupted|拓展：a polar bear 北极熊；polarize v. 使两极分化；polar climate 极地气候
+axis|n.|轴；轴线|The earth's axis is the line between the North and the South Poles|拓展：earth's axis 地轴；rotation axis 自转轴；axis of symmetry 对称轴；复数形式：axes
 ---
-deteriorate|v.|恶化；变坏|Relations between the two countries have deteriorated sharply in recent weeks
-aggravate|v.|加重；加剧；使恶化|Grief aggravated her illness
-degrade|v.|降解；降低...身份；使恶化；使退化|A dishonest action like that will degrade you
-upgrade|v.|使升级；提高；改善|The anti-virus software should often be upgraded
-erode|v.|侵蚀；腐蚀|The waves erode the rocks on the shore|erosion n. 侵蚀；腐蚀
+deteriorate|v.|恶化；变坏|Relations between the two countries have deteriorated sharply in recent weeks|拓展：deterioration n. 恶化；environmental deterioration 环境恶化；deteriorate rapidly 迅速恶化
+aggravate|v.|加重；加剧；使恶化|Grief aggravated her illness|拓展：aggravate the problem 加剧问题；aggravation n. 加重；恶化；口语中可表示“激怒”
+degrade|v.|降解；降低...身份；使恶化；使退化|A dishonest action like that will degrade you|拓展：degradation n. 降解；退化；environmental degradation 环境退化；biodegradable adj. 可生物降解的
+upgrade|v.|使升级；提高；改善|The anti-virus software should often be upgraded|拓展：upgrade the system 升级系统；upgrade one's skills 提升技能；upgrade to 升级到
+erode|v.|侵蚀；腐蚀|The waves erode the rocks on the shore|拓展：erosion n. 侵蚀；腐蚀；soil erosion 水土流失；wind erosion 风蚀
 ---
-Mediterranean|adj./n.|地中海的；地中海地区的；地中海；地中海地区|This dish is a cross between Asian and Mediterranean food
-Atlantic|n.|大西洋|The Atlantic coast is within sight of the hotel
-pacific|adj./n.|平静的；平和的；太平洋的；太平洋|What a beautiful and pacific place this is|pacify v. 平息；安抚；使平静
+Mediterranean|adj./n.|地中海的；地中海地区的；地中海；地中海地区|This dish is a cross between Asian and Mediterranean food|拓展：Mediterranean Sea 地中海；Mediterranean climate 地中海气候；Mediterranean diet 地中海饮食
+Atlantic|n.|大西洋|The Atlantic coast is within sight of the hotel|拓展：Atlantic Ocean 大西洋；Atlantic hurricane 大西洋飓风；transatlantic adj. 横跨大西洋的
+pacific|adj./n.|平静的；平和的；太平洋的；太平洋|What a beautiful and pacific place this is|拓展：Pacific Ocean 太平洋；Pacific Rim 环太平洋地区；pacify v. 平息；安抚；使平静
 ---
-ocean|n.|海洋；洋|These creatures live in the depth of the Pacific Ocean|an ocean of/oceans of 大量
-marine|adj./n.|海洋的；海生的；海事的/水兵|It is true that a lot of people like marine plants as their food|a marine product 海产品；船用品
-navigation|n.|航海；航行|Navigation is a game for brave people|navigator n. 航海家；领航员
+ocean|n.|海洋；洋|These creatures live in the depth of the Pacific Ocean|拓展：an ocean of/oceans of 大量；ocean current 洋流；ocean floor 海底；five oceans 五大洋
+marine|adj./n.|海洋的；海生的；海事的/水兵|It is true that a lot of people like marine plants as their food|拓展：a marine product 海产品；船用品；marine biology 海洋生物学；marine environment 海洋环境
+navigation|n.|航海；航行；导航|Navigation is a game for brave people|拓展：navigator n. 航海家；领航员；GPS navigation 卫星导航；coastal navigation 沿岸航行
 ---
-gulf|n.|海湾|The gulf extends northward
-beach|n.|海滩；河滩|They walked along the beach, talking and laughing
-coast|n.|海岸；海滨|He is going to live by the coast for the sake of his health
+gulf|n.|海湾；鸿沟|The gulf extends northward|拓展：Persian Gulf 波斯湾；gulf between 之间的鸿沟；gulf stream 墨西哥湾暖流
+beach|n.|海滩；河滩|They walked along the beach, talking and laughing|拓展：sandy beach 沙滩；beach volleyball 沙滩排球；go to the beach 去海滩
+coast|n.|海岸；海滨|He is going to live by the coast for the sake of his health|拓展：coastal adj. 沿海的；coastal city 沿海城市
 ---
 shore|n.|（海、湖等大水域的）岸；滨|His ship pulled in to the shore at midnight
 tide|n.|趋势；潮流；潮汐|The gravitational attraction between the moon and the earth causes tides|tidal adj. 潮汐的。at low tide 退潮时，低潮时。Time and tide wait for no man 岁月不等人
@@ -188,11 +188,11 @@ hillside|n.|小山的山腰；山坡|The path steepened as they climed the hills
 overlook|v.|远眺；俯瞰；未注意到|The house on the hill overlooks the village|be easily overlook 容易被忽略的
 ---
 southern|adj.|南方的|Only in the southern part of Taiwan have I seen such scenery
-southeast|n./adj.|Austria lies to the southeast of Germany
-southwest|n./adj.|Ireland is in the southwest of the British Isles
+southeast|n./adj.|东南方；东南部|Austria lies to the southeast of Germany
+southwest|n./adj.|西南方；西南部|Ireland is in the southwest of the British Isles
 ---
-northeast|n./adj.|Snow in October is nothing strange in northeast China
-northwest|n./adj.|There is a large hilly area in the northwest
+northeast|n./adj.|东北方；东北部|Snow in October is nothing strange in northeast China
+northwest|n./adj.|西北方；西北部|There is a large hilly area in the northwest
 eastern|adj.|东方的|The eastern situation is similarly intense
 oriental|adj.|东方的（尤其指中日）|She has studied the cultures of oriental countries
 ---
@@ -384,74 +384,74 @@ rot|v./n.|使腐烂；使腐坏；腐烂|Rot in the tree trunk caused the tree t
 decay|v.|腐烂|The vegetables have begun to decay
 stale|adj.|不新鲜的；没有新意的；陈腐的|He always bought two loaves of stale bread
 ---
-rainforest|n.|雨林
-jungle|n.|丛林
-plantation|n.|种植园
-field|n.|原野；场地；野外
-terrace|n.|梯田
+rainforest|n.|雨林|The Amazon rainforest is home to many species of animals and plants
+jungle|n.|丛林|The jungle is full of dangerous animals
+plantation|n.|种植园|Plantations are large areas of land where crops are grown
+field|n.|原野；场地；野外|Fields are large open spaces of land
+terrace|n.|梯田|The terraces are terraces of land
 ---
-timber|n.|木材；木料；林木
-charcoal|n.|木炭
-log|n.|原木；日志
-logo|n.|标识；徽标
-forestry|n.|林学；林业
+timber|n.|木材；木料；林木|Timber is a valuable resource
+charcoal|n.|木炭|Charcoal is a byproduct of the steel industry
+log|n.|原木；日志|Logs are cut from trees
+logo|n.|标识；徽标|The logo of the company is very popular
+forestry|n.|林学；林业|Forestry is a very important industry
 ---
-branch|n.|树枝；分支机构；分店
-trunk|n.|树干；躯干；大箱子
+branch|n.|树枝；分支机构；分店|Branches are the main parts of a tree
+trunk|n.|树干；躯干；大箱子|The trunk of the tree is very strong
 bough|n.|大树枝|The window of his car was broken by a bough during last night's storm
-root|n./v.|根；使生根||root cause 根本原因
+root|n./v.|根；使生根|The tall tree has very deep roots.|root cause 根本原因；a root cause 根本原因
 ---
 hay|n.|干草|Make hay with sun shines|hit the hay 上床睡觉
 straw|n.|稻草；麦秆；吸管|This hat is made of straw
 reed|n.|芦苇|The roof is made of dried reed
 thorn|n.|刺；荆棘|She got her finger pricked by a thorn|thorny adj. 多刺的；棘手的；a thorn in my side/flesh 眼中钉、肉中刺
-weed|n.|杂草
+weed|n.|杂草|The weeds are growing in the garden|weed out 挖除；剔除
 ---
-grass|n.|草；草地
-meadow|n.|草地；牧草
-lawn|n.|草地；草坪|My mother asked me to mow the lawn
+grass|n.|草；草地|The grass is short in the park|grassroots 根源；基层
+meadow|n.|草地；牧草|The meadow is full of wildflowers|meadowland meadowland
+lawn|n.|草地；草坪|My mother asked me to mow the lawn|mow the lawn 整理草坪
 ---
-olive|n.|橄榄；橄榄树|The olive branch is the emblem of peace. 橄榄枝是和平的象征
-pine|n.|松树；松木
-vine|n.|葡萄藤
+olive|n.|橄榄；橄榄树|The olive branch is the emblem of peace. 橄榄枝是和平的象征|olive oil 橄榄油
+pine|n.|松树；松木|The pine trees are tall and strong|pineapple 椰子
+vine|n.|葡萄藤|The vine is climbing up the wall|vineyard 葡萄园
 ---
-violet|n.|紫罗兰
-tulip|n.|郁金香
-mint|n./v.|薄荷；铸币厂/铸造（硬币）|We sat in the back row, sucking mints 我们坐在后排，嘴里咂着薄荷糖
+violet|n.|紫罗兰|The violet is a delicate flower|violet flower 紫罗兰花
+tulip|n.|郁金香|The tulip is a popular flower|tulip flower 郁金香花
+mint|n./v.|薄荷；铸币厂/铸造（硬币）|We sat in the back row, sucking mints 我们坐在后排，嘴里咂着薄荷糖|minty adj. 薄荷味的
 ---
-reef|n.|暗礁|The ship was wrecked on a reef. 这船触礁失事了
-alga|n.|海藻|Some of the algae are edible|algal adj. 海藻的。algae 复数形式
-enzyme|n.|酶
+reef|n.|暗礁|The ship was wrecked on a reef. 这船触礁失事了|reef line 潜艇线
+alga|n.|海藻|Some of the algae are edible|algal adj. 海藻的。algae 复数形式|algae bloom 海藻 blooms 海藻开花
+enzyme|n.|酶|The enzyme is a protein that catalyzes a chemical reaction|enzyme reaction 酶反应
 catalyst|n.|催化剂；促进因素|A catalyst is a substance which speeds up a chemical reaction|a catalyst for changing 改变...的催化剂
 ---
-release|v./n.|释放；发布
+release|v./n.|释放；发布|The release of the new movie is a big event|release the tension 放松紧张情绪
 emission|n.|排放；散发；排放物|This conference aims to reduce carbon emissions or greenhouse gas emissions around this world
-absorb|v.|吸收；吸引全部注意力
-circulation|n.|流通；循环；流传|Sea surface temperature and atmospheric circulation are strongly coupled
+absorb|v.|吸收；吸引全部注意力|The new book absorbs me completely|absorb into 吸引
+circulation|n.|流通；循环；流传|Sea surface temperature and atmospheric circulation are strongly coupled|circulate around 循环
 ---
 exceed|v.|超出|The driver exceeds the speed limit|exceed expectation 意料之外
-uptake|n.|摄取；领会|The doctor advised me to reduce the salt uptake
+uptake|n.|摄取；领会|The doctor advised me to reduce the salt uptake|take up 吸收；占据
 nutrient|n.|营养物质|The nutrient in the soil acts as a stimulus to growth in plants|nutrition n. 营养
-energy|n.|能源；精力
+energy|n.|能源；精力|The energy of the sun is used to generate electricity|energy source 能源
 ---
-surroundings|n.|环境可与environment互换
+surroundings|n.|环境可与environment互换|surrounding adj. 周围的
 mechanism|n.|机制；构造|Bones and muscles are parts of the mechanism of the body骨骼和肌肉是身体构造的一部分
-counterbalance|n./v.|其平衡作用的事物；抵消；对...起平衡作用
+counterbalance|n./v.|其平衡作用的事物；抵消；对...起平衡作用|counterbalance the effect of 抵消...的影响
 ---
-protect|v.|保护
-preserve|v.|保护；维持；保存
+protect|v.|保护|protect against 防止
+preserve|v.|保护；维持；保存|preserve the environment 保护环境
 conservation|n.|（对自然环境的）保护；保存|Some accommodation between conservation and tourism is essential. 对自然环境的保护和旅游业之前的相互协调是至关重要的 —— accommodation 除了有住宿还有和解协调的意思|conversation n. 交谈
 ---
-bush fire|n.|林区大火
-extinguish|v.|扑灭（火）；使（想法；感情等）破灭|They tried every means to extinguish the fire
-destruct|v.|（使）自毁
-ruin|v./n.|毁坏；摧毁；毁灭；废墟
-perish|v.|毁灭；消亡；腐烂|Flowers perish when frost comes
+bush fire|n.|林区大火|The bush fire spread rapidly through the dry forest.
+extinguish|v.|扑灭（火）；使（想法、感情等）破灭|They tried every means to extinguish the fire.
+destruct|v.|（使）自毁|The missile will destruct automatically if it goes off course.
+ruin|v./n.|毁坏；摧毁；毁灭；废墟|The ancient temple fell into ruin over centuries.
+perish|v.|毁灭；消亡；腐烂|Flowers perish when frost comes.
 ---
 demolish|v.|毁坏；拆除；推翻|The fire demolished the town
 infringe|v.|侵犯；违反|The press infringed a copyright agreement
-undermine|v.|破坏；逐渐削弱
-extinction|n.|灭绝||extinct adj. 已灭绝的
+undermine|v.|破坏；逐渐削弱|Lack of funding has undermined the progress of the research.
+extinction|n.|灭绝|Many species are facing extinction due to habitat loss.
 ---
 pattern|n.|模式；样式；底样
 outcome|n.|结果|We are anxiously awaiting the outcome of their discussion
