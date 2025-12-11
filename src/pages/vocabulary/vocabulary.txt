@@ -402,8 +402,8 @@ bough|n.|大树枝|The window of his car was broken by a bough during last night
 root|n./v.|根；使生根|The tall tree has very deep roots.|root cause 根本原因；a root cause 根本原因
 ---
 hay|n.|干草|Make hay with sun shines|hit the hay 上床睡觉
-straw|n.|稻草；麦秆；吸管|This hat is made of straw
-reed|n.|芦苇|The roof is made of dried reed
+straw|n.|稻草；麦秆；吸管|This hat is made of straw|
+reed|n.|芦苇|The roof is made of dried reed|reed bed 芦苇丛
 thorn|n.|刺；荆棘|She got her finger pricked by a thorn|thorny adj. 多刺的；棘手的；a thorn in my side/flesh 眼中钉、肉中刺
 weed|n.|杂草|The weeds are growing in the garden|weed out 挖除；剔除
 ---
@@ -501,7 +501,7 @@ swarm|n.|（蜜蜂昆虫的）一大群；（快速移动的）人群
 throng|n./v.|人群/群集
 crowd|n.|人群；观众；一群人
 ---
-beast|n.|野兽；凶残的人；畜生
+beast|n.|野兽；凶残的人；畜生|That beast is so strong that it can pull the car away from the fire
 brute|n.|粗野的人；残忍的人|We all want punish the brute
 cruel|adj.|残忍的；残暴的
 ---
@@ -688,309 +688,309 @@ shepherd|n.|牧羊人，羊倌|The shepherd set out to look for sheep that had w
 ===
 太空探索
 +++
-galaxy|n.|星系|The sun is only a very small start in the Galaxy|the Galaxy 银河系
-cosmos|n.|宇宙
-universe|n.|宇宙；万物；世界
-interstellar|adj.|星际的|These elements become part of the interstellar gas and dust
+galaxy|n.|星系|The Sun is only a very small star in the Galaxy|the Galaxy 银河系（专指银河系）
+cosmos|n.|宇宙|Ancient philosophers tried to understand the order of the cosmos
+universe|n.|宇宙；万物；世界|The universe is expanding faster than ever before
+interstellar|adj.|星际的|These elements become part of the interstellar gas and dust|interstellar travel 星际旅行 / interstellar medium 星际介质
 ---
-terrestrial|adj.|地球的；陆地的
-celestial|adj.|天上的
-astronomy|n.|天文学
-astrology|n.|占星术；占星学
-astronaut|n.|宇航员
+terrestrial|adj.|地球的；陆地的|Mercury, Venus, Earth and Mars are all terrestrial planets|terrestrial planet 类地行星
+celestial|adj.|天上的；天体的|Stars, planets and galaxies are all celestial objects|celestial body 天体 / celestial sphere 天球
+astronomy|n.|天文学|Astronomy is a natural science that studies celestial objects and the universe as a whole
+astrology|n.|占星术；占星学|Many people read their daily astrology in magazines, but it has no scientific basis|horoscope 星座运势 / zodiac 黄道十二宫
+astronaut|n.|宇航员|The astronaut floated weightlessly inside the spacecraft|Chinese astronaut 航天员（taikonaut） / American astronaut（astronaut） / Russian astronaut（cosmonaut）
 ---
-comet|n.|彗星
-meteorite|n.|陨石
-crater|n.|（撞击或爆炸形成的）坑|They came to the lip of a dead volcanic crater
+comet|n.|彗星|Halley’s Comet appears every 76 years|comet tail 彗尾 / periodic comet 周期彗星
+meteorite|n.|陨石|This meteorite contains rare minerals from space|iron meteorite 铁陨石 / stony meteorite 石陨石
+crater|n.|陨石坑；（撞击或爆炸形成的）坑|The asteroid impact created a 180-km-wide crater|impact crater 撞击坑 / lunar crater 月坑
 ---
-dust|n.|尘土；灰尘
-ash|n.|灰烬
-envelope|n.|外裹物；外层|The surface of the sun is a glowing gas envelope
-chunk|n.|厚块|My mother bought a chunk of meat|a chunk of 一大块，一厚块
+dust|n.|尘土；灰尘|Cosmic dust floats in the space between stars|cosmic dust 宇宙尘埃 / interstellar dust 星际尘埃
+ash|n.|灰烬|Volcanic ash covered the entire city after the eruption|volcanic ash 火山灰
+envelope|n.|外裹物；外层；气壳|The Sun is surrounded by a hot plasma envelope|atmospheric envelope 大气层 / gaseous envelope 气体外壳
+chunk|n.|厚块；大块|A chunk of ice broke away from the comet|a chunk of 一大块
 ---
-spacecraft|n.|宇宙飞船
-spaceship|n.|宇宙飞船
-probe|n.|太空探测器；详尽调查|Their probe into the cause of the fire proved futile
-module|n.|模块
+spacecraft|n.|宇宙飞船；航天器|The spacecraft entered orbit around Jupiter|manned spacecraft 载人航天器
+spaceship|n.|宇宙飞船|The spaceship accelerated toward Alpha Centauri
+probe|n.|太空探测器；探测器|The Mars probe sent back amazing photos|deep-space probe 深空探测器
+module|n.|舱；模块|The astronauts returned to the command module|lunar module 月球舱
 ---
-propulsion|n.|推进力|This aircraft works by jet propulsion
-pressure|n.|压力
-dynamics|n.|动力学；动态
-motion|n.|作物；移动
+propulsion|n.|推进力；推进系统|The satellite uses electric propulsion|ion propulsion 离子推进
+pressure|n.|压力；压强|Deep-sea pressure can crush a submarine|air pressure 气压 / blood pressure 血压
+dynamics|n.|动力学；动态|Aerodynamics is a branch of fluid dynamics|flight dynamics 飞行力学
+motion|n.|运动；移动|The planet’s motion follows an elliptical path|uniform motion 匀速运动 / laws of motion 运动定律
 ---
-vent|n./v.|排气口；排放；发泄
-tail|n.|尾部
-curve|n.|曲线；弧线
+vent|n./v.|排气口；排放；发泄|Lava and gas escaped through volcanic vents|hydrothermal vent 热液喷口
+tail|n.|尾部；彗尾|The comet developed a long ion tail and dust tail|comet tail 彗尾 / ion tail 离子尾
+curve|n.|曲线；弧线|The light curve shows how the star’s brightness changes|light curve 光变曲线
 ---
-exploration|n.|探索
-expedition|n.|远征；探险
-flyby|n.|（航天器对行星或卫星的）飞掠
+exploration|n.|探索；勘探|Human exploration of Mars may begin in the 2030s|space exploration 太空探索
+expedition|n.|远征；探险队|The Apollo 11 expedition landed the first humans on the Moon|scientific expedition 科学考察
+flyby|n.|（航天器对行星等的）飞掠；近距离飞越|The probe performed a flyby of Jupiter to gain speed|flyby mission 飞掠任务
 ---
-observatory|n.|天文台
-telescope|n.|望远镜
-spectacle|n.|壮观的景象；奇观|The sunrise was a splendid spectacle|spectacular adj. 壮观的；壮丽的
+observatory|n.|天文台|The new observatory is located on a mountain top|space observatory 空间天文台
+telescope|n.|望远镜|The Hubble Space Telescope has been operating since 1990|radio telescope 射电望远镜
+spectacle|n.|壮观景象；奇观|The total solar eclipse was an unforgettable spectacle|spectacular adj. 壮观的
 ---
-orbit|n.|轨道
-ecliptic|n.|黄道
-diameter|n.|直径
-radius|n.|半径
+orbit|n.|轨道；绕轨道运行|The Moon takes 27.3 days to complete one orbit around Earth|low Earth orbit 近地轨道
+ecliptic|n.|黄道|The Sun appears to move along the ecliptic throughout the year|ecliptic plane 黄道面
+diameter|n.|直径|The Earth’s diameter is about 12,742 kilometres|equatorial diameter 赤道直径
+radius|n.|半径|The black hole’s event horizon has a radius of only a few kilometres|Schwarzschild radius 史瓦西半径
 ---
-substance|n.|物质；实质；要旨
-composition|n.|成分；构成；作品；创作
-compound|n./adj./v.|混合物；化合物。复合的；组合的。混合|English loves compound words: "washing machine" and that sort of thing
+substance|n.|物质；实质；要旨|Dark matter is an unknown substance that affects gravity|chemical substance 化学物质
+composition|n.|成分；构成；作品；创作|Scientists analysed the chemical composition of the meteorite|atmospheric composition 大气成分
+compound|n./adj./v.|混合物；化合物。复合的；组合的。混合|Water is a compound of hydrogen and oxygen|organic compound 有机化合物
 ---
-fossil|n.|化石
-sample|n.|样品；样本
-specimen|n.|样品；标本
+fossil|n.|化石|The fossil of a dinosaur was discovered in the desert|fossil fuel 化石燃料
+sample|n.|样品；样本|The rover collected rock samples from the Martian surface|soil sample 土壤样本
+specimen|n.|样品；标本；个体|This meteorite is the finest specimen in the museum|rock specimen 岩石标本
 ---
-particle|n.|颗粒；微粒；极小量
-molecule|n.|分子
-atom|n.|原子
-ion|n.|离子
-electron|n.|电子
-quantum|n.|量子|In this example, we employed the quantum mechanics principle
+particle|n.|颗粒；微粒；极小量|Cosmic dust particles are smaller than a micron|subatomic particle 亚原子粒子
+molecule|n.|分子|DNA is a very large molecule|molecular cloud 分子云
+atom|n.|原子|Every object is made of atoms|hydrogen atom 氢原子
+ion|n.|离子|The solar wind contains many charged ions|positive ion 阳离子
+electron|n.|电子|Electrons orbit the nucleus of an atom|free electron 自由电子
+quantum|n.|量子；量子的|Quantum mechanics explains behaviour at the atomic scale|quantum leap 量子跃迁
 ---
-liquid|n./adj.|液体；液体的
-fluid|n./adj.|液体；流体。流动的|When you are sick, you should drink plenty of fluids
-solid|n./adj.|固体。固体的；牢固的
+liquid|n./adj.|液体；液体的|Mercury is the only metal that is liquid at room temperature|liquid hydrogen 液氢
+fluid|n./adj.|液体；流体。流动的；流畅的|The spacecraft uses liquid fluid for cooling|superfluid 超流体
+solid|n./adj.|固体。固体的；牢固的|Ice is water in solid form|solid rocket booster 固体火箭助推器
 ---
-synthesise/synthesize|v.| 合成；综合|Darwinian theory has been synthesized with modern genetics
-formation|n.|形成
-method|n.|方法
+synthesise/synthesize|v.|合成；综合|Scientists learned to synthesize new elements in the lab
+formation|n.|形成；形成物|Star formation occurs inside giant molecular clouds|planet formation 行星形成
+method|n.|方法；办法|The spectroscopic method can detect distant planets
 ---
-spectrum|n.|光谱；范围
-dimension|n.|维度
-frequency|n.|频率；发生次数
-signal|n.|信号
-antenna|n.|天线
-circuit|n.|线路；电路；巡回|For many years, He was top banana on the circuit 许多年来，他都是巡回剧团里的主角——top banana主要人物
+spectrum|n.|光谱；频谱；范围|The star’s spectrum revealed its chemical makeup|electromagnetic spectrum 电磁波谱
+dimension|n.|维度；尺寸|Some theories suggest the universe has extra dimensions
+frequency|n.|频率；发生次数|The radio signal has a frequency of 1420 MHz|high-frequency 高频
+signal|n.|信号；讯号|The probe sent a strong signal back to Earth|radio signal 无线电信号
+antenna|n.|天线|A radio telescope uses a huge dish as its antenna|dipole antenna 偶极天线
+circuit|n.|线路；电路|The electrical circuit was damaged during re-entry
 ---
-refraction|n.|折射
-ultraviolet|n./adj.|紫外辐射。紫外线的
-radioactive|adj.|放射性的
+refraction|n.|折射|Light refraction creates rainbows in the atmosphere|atmospheric refraction 大气折射
+ultraviolet|n./adj.|紫外线；紫外辐射。紫外线的|Ultraviolet light from the Sun can damage skin|UV radiation 紫外辐射
+radioactive|adj.|放射性的|Uranium is a radioactive element|radioactive decay 放射性衰变
 ---
-distinct|adj.|明显的；截然不同的
-discernible|adj.|可辨别的；看得清的|Night fell, but the outline of the factory buildings was still discernible
-invisible|adj.|看不见的
+distinct|adj.|明显的；截然不同的|The planet has two distinct moons
+discernible|adj.|可辨别的；看得清的|A faint ring around the planet was barely discernible
+invisible|adj.|看不见的|Infrared light is invisible to the human eye
 ---
-collision|n.|碰撞事故；冲突
-squash|v./n.|压扁；壁球
-fragment|n./v.|碎片；片段；（使）碎裂
+collision|n.|碰撞；冲突|The galaxy collision will take millions of years|mid-air collision 空中相撞
+squash|v./n.|压扁；挤压；壁球|The asteroid was squashed by the planet’s gravity
+fragment|n./v.|碎片；片段；（使）碎裂|The comet broke into fragments after passing the Sun|fragmentation 碎裂
 ---
-cataclysmic|adj.|剧变的；灾难的|One can readily trace the disappearance of dinosaurs to a cataclysmic
-overwhelming|adj.|压倒性的
-despair|v./n.|绝望
-desperate|adj.|绝望的；急需要的
-hopeless|adj.|无望的；极差的
+cataclysmic|adj.|剧变的；灾难性的|The cataclysmic impact ended the age of dinosaurs| cataclysmic event 灾难性事件
+overwhelming|adj.|压倒性的；势不可挡的|The evidence for the Big Bang is overwhelming| overwhelming evidence 有力的证据
+despair|v./n.|绝望；令人绝望|Some thought Mars exploration was a mission of despair| despairing 痛不欲生的
+desperate|adj.|绝望的；不顾一切的；极需要的|They made a desperate attempt to save the mission| desperate situation 紧迫的形势
+hopeless|adj.|无望的；毫无希望的|For many years, reaching Alpha Centauri seemed hopeless| hopelessness 无望
 ===
 学校教育
 +++
-education|n.|
-primary|adj.
-secondary|adj.
+education|n.|教育|Education is the key to understanding the universe|compulsory education 义务教育 / higher education 高等教育
+primary|adj.|初级的；主要的；小学|She teaches primary school children aged 6–11|primary education 初等教育 / primary planet 原始行星
+secondary|adj.|中级的；次要的；中学|Secondary education in China lasts six years|secondary school 中学
 ---
-university|n.
-college|n.|学院；大学
-institute|n.|研究所
-academy|n.|专科院校；（美国的）私立学校；研究会；学会|This is an academy of music|academic adj. 学术的；学院的
+university|n.|大学|Cambridge University has one of the world’s best astronomy departments|university education 大学教育
+college|n.|学院；大学|Many American universities are made up of separate colleges|community college 社区学院
+institute|n.|研究所；学院|The Lunar and Planetary Institute is based in Houston|research institute 研究所
+academy|n.|专科院校；研究院；学会|The European Space Academy trains future astronauts|military academy 军事学院
 ---
-learn|v.|学习；得知
-study|v./n.|学习；研究
-acquire|v.|获得；购得
-knowledge|n.|知识
+learn|v.|学习；得知|Astronauts must learn to live in zero gravity|learn to do sth. 学会做某事
+study|v./n.|学习；研究|She is studying astrophysics at MIT|study hard 努力学习
+acquire|v.|获得；学到|The spacecraft acquired new data about the comet|acquire knowledge 获得知识
+knowledge|n.|知识|Space exploration expands human knowledge of the cosmos| knowledge of sth. 某方面的知识
 ---
-expertise|n.|专门技能
-novice|n.|新手|I'm a complete novice at yoga
-recruit|v.|吸收（新成员）|The country's first act would be to recruit for the navy
+expertise|n.|专门技能；专长|The mission required expertise in robotics and geology| expertise in sth. 某方面的专长
+novice|n.|新手；初学者|Even novices can now observe galaxies with small telescopes|novice in sth. 某方面的初学者
+recruit|v.|招募；吸收（新成员）|NASA is recruiting the next generation of astronauts|recruit for sth. 招募某方面的人
 ---
-literate|adj.|有读写能力的|Over one-quarter of the adult population are not fully literate|literacy n. 读写能力
-illiteracy|n.|文盲
-numerate|adj.|识数的；有计算能力的
+literate|adj.|有读写能力的；精通的|All astronauts must be scientifically literate|computer-literate 懂电脑的
+illiteracy|n.|文盲；无知盲|Scientific illiteracy is a serious problem in many countries|illiterate in sth. 某方面的文盲
+numerate|adj.|有计算能力的|Engineers must be highly numerate|numerate in sth. 某方面的计算能力
 ---
-problem|n.|问题；习题
-issue|n./v.|重要问题；发行。公布；发出
-affair|n.|事件；公共事件
-controversial|adj.|有争议的|They tried to stay away from controversial topics at the dinner party
+problem|n.|问题；难题；习题|Finding life on Mars is the biggest problem in astrobiology|problem with sth. 某方面的问题
+issue|n./v.|重要议题；问题。发行|Climate change is a global issue|current issue 当前问题
+affair|n.|事件；事务|The launch was a national affair watched by millions
+controversial|adj.|有争议的|The decision to go to Mars remains controversial
 ---
-puzzle|n./v.|难题；谜。使迷惑
-riddle|n.|谜；谜语
-obscure|adj.|难以理解的|Rules for the game are somewhat obscure
+puzzle|n./v.|难题；谜。使困惑|Dark energy is the greatest puzzle in modern physics
+riddle|n.|谜；谜一般的事物|The origin of the Moon was long a riddle
+obscure|adj.|模糊的；难以理解的|The manuscript was written in obscure ancient symbols
 ---
-instil/instill|v.| 逐渐灌输|A sense of duty must be instilled in our children
-cram|v.|把...塞进；（为应考）临时死记硬背
-emphasise/emphasize|v.|强调；着重
-enhance|v.|提高；增强|A good score of IELTS enhance my change of getting the offer
+instil/instill|v.|逐渐灌输|Teachers try to instil a love of science in their students
+cram|v.|死记硬背；塞满|Students often cram the night before an exam
+emphasise/emphasize|v.|强调；着重|The professor emphasised the importance of evidence
+enhance|v.|提高；增强|The new telescope will greatly enhance our ability to see distant galaxies
 ---
-enable|v.|使能够
-inspire|v.|鼓舞；给...灵感
-motive|n.|动机；缘由
-motivate|v.|激发；驱使
+enable|v.|使能够；使可能|The new rocket will enable crewed missions to Mars
+inspire|v.|鼓舞；激发灵感|The Apollo programme inspired a whole generation of scientists
+motive|n.|动机|The main motive for space exploration is curiosity
+motivate|v.|激励；驱动|Competition between nations motivated the space race
 ---
-stimulate|v.|刺激；激励
-spur|v./n.|鞭策；激发。马刺；刺激
-impetus|n.|推动；促进；动量；惯性|The car ran down the bridge under it's own impetus
+stimulate|v.|刺激；激发|Coffee stimulates the brain; discovery stimulates curiosity
+spur|v./n.|激励；促进。马刺|The discovery of exoplanets spurred investment in new telescopes
+impetus|n.|推动力；动力|The Sputnik launch gave new impetus to the American space programme
 ---
-indulge|v.|迁就；放任；沉湎；让...享受一下|You can indulge yourself without spending a fortune
-spoil|v.|宠坏；溺爱；破坏；糟蹋
-abuse|v.|滥用；虐待|It's easy to abuse one's power|alcohol abuse 酗酒
+indulge|v.|放纵；沉迷；满足|After the mission, the astronauts indulged in real food
+spoil|v.|宠坏；溺爱；毁掉|Too much praise can spoil a child
+abuse|v.|滥用；虐待|Some critics say we abuse resources by sending robots to space
 ---
-intelligent|adj.|聪明的
-clever|adj.|聪明的；精明的
-smart|adj.|聪明的；智能的
-all-round/all-around|adj.|有多方面才能的；全面的|She is an all-round artist
+intelligent|adj.|聪明的；有智力的|Octopuses are highly intelligent creatures
+clever|adj.|聪明的；机灵的|She found a clever way to solve the equation
+smart|adj.|聪明的；机敏的；智能的|Smart students ask good questions
+all-round/all-around|adj.|全面的；多才多艺的|We need all-round scientists who understand both theory and engineering
 ---
-genius|n.|天才人物；天赋
-elite|n.|精英
-idiot|n.|白痴；傻瓜
+genius|n.|天才人物；天赋|Einstein is widely regarded as a scientific genius
+elite|n.|精英；精华|Only the elite astronauts are chosen for Mars missions|elite group 精英群体
+idiot|n.|白痴；傻瓜（慎用，口语中极具冒犯性）|Don’t be an idiot—wear your helmet in space!
 ---
-wisdom|n.|智慧；学问
-wit|n.|风趣的人；机智；风趣；智慧|Holmes was a gregarious, a great wit, a man of wide interests
-aptitude|n.|天生的才能；资质|That student has an aptitude for music|apt adj. 恰当的；聪明的
-capable|adj.|有能力的；有才能的|Not everyone is capable of judging fine arts|capability n. 能力。capacity n. 容量。be capable of 能够
+wisdom|n.|智慧；明智|Age brings wisdom, but curiosity drives discovery
+wit|n.|机智；风趣|Stephen Hawking was famous for both his science and his sharp wit
+aptitude|n.|天资；才能|She showed an early aptitude for mathematics|apt adj. 聪明的；恰当的
+capable|adj.|有能力的；胜任的|A capable engineer can design a rocket in months|capability n. 能力
 ---
-excellent|adj.|杰出的；优秀的|She had a high reputation for her excellent detective novels|excel v. 擅长；突出
-outstanding|adj.|突出的；杰出的
-brilliant|adj.|光辉的；聪明的；（光线等）明亮的
+excellent|adj.|杰出的；优秀的|The telescope produced excellent images of Jupiter|excel v. 擅长
+outstanding|adj.|杰出的；突出的|Her research on exoplanets is outstanding
+brilliant|adj.|才华横溢的；极聪明的；明亮的|Marie Curie was a brilliant scientist
 ---
-prestige|n.|威望；声望|These new policies will affect the president's national and international prestige|prestigious adj. 有名望的；享有声望的
-reputation|n.|名誉；声誉
-eminent|adj.|著名的；杰出的|The students are expecting the arrival of an eminent scientist
-notorious|adj.|名声狼藉的|The notorious thief was finally caught and put to prison|notoriety n. 坏名声
+prestige|n.|威望；声誉|Winning the Nobel Prize brings enormous prestige|prestigious adj. 有声望的
+reputation|n.|名声；声誉|The university has a worldwide reputation for astrophysics
+eminent|adj.|杰出的；著名的|Several eminent astronomers attended the conference
+notorious|adj.|声名狼藉的；臭名昭著的|The mission failure made the company notorious
 ---
-esteem|v.|尊重；尊敬
-respect|n./v.|尊敬；敬重
-diligent|adj.|勤勉的；勤奋的
-painstaking|adj.|极其仔细的；辛苦的|The mastery of a language requires painstaking effort
+esteem|v./n.|尊重；尊敬|She is held in high esteem by her colleagues
+respect|n./v.|尊敬；尊重|Students must show respect for their professors
+diligent|adj.|勤奋的|Diligent study is the key to becoming a good scientist
+painstaking|adj.|艰苦的；极仔细的|The restoration of the old telescope was painstaking work
 ---
-skill|n.|技巧
-approach|n./v.|方法。接近
-scheme|n./v.|计划；方案；阴谋。谋划|All the scheme an intrigues are doomed to failure
+skill|n.|技能；技巧|Landing a spacecraft requires exceptional skill
+approach|n./v.|方法；途径。接近|The team developed a new approach to detecting dark matter
+scheme|n./v.|计划；方案。策划|The government launched a new space exploration scheme
 ---
-headmaster|n.|[英]男校长
-principal|n./adj.|[美]（中小学）校长；[英]大学校长；学院院长。首要的|He is going to resign from the position of principal
-dean|n.|（大学的）学院院长；系主任
-faculty|n.|（大学的）系、院；全体教员
+headmaster|n.|[英]（中小学）男校长
+principal|n.|[美]中小学校长；[英]大学校长；学院院长|The principal welcomed the Nobel laureate
+dean|n.|（大学的）学院院长；系主任|The Dean of Science approved the new observatory
+faculty|n.|（大学的）系、学院；全体教员|She joined the Faculty of Astronomy last year
 ---
-professor|n.|教授
-scholar|n.|学者
-scientist|n.|科学家
-mentor|n.|导师；顾问
-tutor|n.|家庭教师；（英国大学或者学院的）导师
+professor|n.|教授|Professor Wang is a leading the exoplanet research group
+scholar|n.|学者；获奖学金者|She is a Rhodes Scholar studying cosmology
+scientist|n.|科学家|China now has more scientists than any other country
+mentor|n.|导师；指导者|My PhD mentor taught me how to write research papers
+tutor|n.|（大学）导师；家教|Each Oxford student has a personal tutor
 ---
-lecturer|n.|讲师
-assistant|n.|助理；助手
-candidate|n.|候选人；求职者；考生
+lecturer|n.|讲师；大学讲师|The lecturer gave a talk on black holes
+assistant|n.|助理；助手|She works as a research assistant in the lab
+candidate|n.|候选人；考生；求职者|There were 8,000 candidates for only 12 astronaut positions
 ---
-degree|n.|学位；程度|He left without completing his degree|to a certain degree 在某种程度上
-qualify|v.|（使）有资格、有权
-certify|v.|证明；颁发专业合格证书
-license/licence|n.|执照；许可证
-permit|n.|许可证
+degree|n.|学位；程度|She earned her PhD degree in astrophysics|bachelor’s/master’s/doctoral degree
+qualify|v.|（使）具备资格|This training will qualify you as a mission specialist
+certify|v.|证明；认证|The FAA certifies all commercial spacecraft
+license/licence|n.|执照；许可证|You need a pilot’s license to fly a plane
+permit|n.|许可证；执照|The government issued a launch permit
 ---
-diploma|n.|毕业文凭
-diplomat|n.|外交官；善于交际的人
-ambassador|n.|大使|He was appointed ambassador to France|embassy n. 大使馆
+diploma|n.|毕业文凭；学位证书|He received his diploma in aerospace engineering
+diplomat|n.|外交官|The Chinese diplomat attended the ISS cooperation meeting
+ambassador|n.|大使|The ambassador opened the new space exhibition
 ---
-pupil|n.|小学生；瞳孔|As a girl, she had been a model pupil
-graduate|n./v.|毕业生；毕业
-ceremony|n.|典礼；礼节
+pupil|n.|小学生；瞳孔|The primary-school pupils built model rockets
+graduate|n./v.|毕业生；大学毕业生；毕业|She will graduate next summer|postgraduate 研究生
+ceremony|n.|典礼；仪式|The graduation ceremony was held in the main hall
 ---
-bachelor|n.|学士；单身汉
-master|n./v.|硕士；大师。精通；控制
-doctor|n.|博士；医生
+bachelor|n.|学士；单身汉|He received a Bachelor of Science in Physics
+master|n./v.|硕士；大师。精通|She is doing a Master’s degree in astronomy
+doctor|n.|博士；医生|He finally got his Doctor of Philosophy (PhD) last month
 ---
-fresher|n.|[英]（大学）一年级新生
-sophomore|n.|[美]（大学或高中）二年级学士
-junior|n./adj.|[美]（大学或高中）三年级学生；较年幼者。青少年的；级别（或地位）较低的
-senior|n./adj.|[美]（大学或高中）毕业班学士；较年长者。成人的；资深的
-alumni|n.|[alumnus 的复数形式]毕业生；校友|My alumni and alumna are present at my birthday party
+fresher|n.|[英]大学一年级新生|Thousands of freshers arrived on campus this week  
+sophomore|n.|[美]大学二年级学生|Sophomores can already choose their major  
+junior|n./adj.|[美]大学三年级学生；初级的|Most juniors start preparing for graduate school  
+senior|n./adj.|[美]大学四年级学生；资深的|Seniors wear graduation gowns in May  
+alumni|n.|校友；毕业生（alumnus单数，alumna女性单数）|The alumni donated a new telescope to the university  
 ---
-campus|n.|（大专院校的）校园
-orientation|n.|迎新会；方向
-platform|n.|平台；讲台
-coed/co-educational|adj./n.|男女同校的。（男女同校的大学生中的）女生|A nationwide research is under way for typical coeds
+campus|n.|校园|The university campus covers 200 hectares  
+orientation|n.|新生迎新；迎新周|Orientation week helps freshers find their way around  
+platform|n.|平台；讲台；月台|The professor stood on the platform to give the lecture  
+coed/co-educational|adj./n.|男女同校的；（男女同校里的）女生|She chose a co-educational university  
 ---
-register|v./n.|登记；注册。登记表；注册簿
-roster|n.|花名册；登记表；执勤表|I am on the roster for tomorrow night
-enrol/enroll|v.|登记；注册；加入
-matriculation|n.|注册入大学
+register|v./n.|注册；登记。登记册|All students must register online before classes begin  
+roster|n.|名册；花名册|Check the duty roster to see whose turn it is  
+enrol/enroll|v.|注册入学；登记|Over 5,000 new students enrolled this year  
+matriculation|n.|入学注册；入学典礼|Matriculation day is full of ceremonies and photos  
 ---
-accommodation|n.|住处；食宿招待
-dorm|n.|宿舍
-dining hall|n.|食堂
-canteen|n.|水壶；[英]食堂
+accommodation|n.|住宿；学生宿舍（英式）|The university guarantees accommodation for all freshers  
+dorm|n.|宿舍（美式，dormitory缩写）|I lived in a dorm with three roommates  
+dining hall|n.|学校食堂|The dining hall serves three meals a day  
+canteen|n.|[英]学生食堂；小卖部|Queue up at the canteen for fish and chips  
 ---
-laboratory/lab|n.|实验室；研究室
-experiment|n.|实验；试验
-data|n.|[datum 的复数形式]数据
-quantity|n.|数量
-quality|n.|质量
+laboratory/lab|n.|实验室|The physics lab is open until 10 p.m.  
+experiment|n.|实验|We conducted an experiment on planetary motion  
+data|n.|数据（datum的复数）|The telescope collected huge amounts of data overnight  
+quantity|n.|数量|A large quantity of dark matter remains undetected  
+quality|n.|质量；品质|The quality of the images from the new telescope is excellent  
 ---
-library|n.|图书馆；个人收藏
-literature|n.|文学；文学作品；文献
-article|n.|文章
-author|n.|作者；作家
+library|n.|图书馆|The university library is open 24/7 during exam week  
+literature|n.|文献；文学|She is doing a PhD in English literature  
+article|n.|论文；文章|I just published an article in Nature Astronomy  
+author|n.|作者|Who is the lead author of this paper?  
 ---
-tale|n.|故事；传说
-fiction|n.|小说；虚构；杜撰
-story|n.|故事；小说；（尤指口头的）叙述
-diary|n.|日记；日记簿
+tale|n.|故事；传说|He told us old tales about the stars and gods  
+fiction|n.|小说；虚构|Science fiction often predicts real future technology  
+story|n.|故事；新闻报道|Her short story won first prize  
+diary|n.|日记|Astronauts keep a daily diary during missions  
 ---
-poetry|n.|诗
-magazine|n.|杂志；期刊；弹夹
-journal|n.|日报；周报；（尤指专门科学的）杂志；日志
-coverage|n.|新闻报道；覆盖范围
+poetry|n.|诗歌|She writes poetry about the night skies and galaxies  
+magazine|n.|杂志|I read Scientific American magazine every month  
+journal|n.|学术期刊；日志|The paper was accepted by the Astrophysical Journal  
+coverage|n.|报道；覆盖范围|The launch received live TV coverage worldwide  
 ---
-bibliography|n.|参考书目
-encyclopedia/encyclopaedia|n.|百科全书
-biography|n.|传记
-documentary|n./adj.|纪录片；记录的
-series|n.|连续的；一系列；系列节目
+bibliography|n.|参考文献目录|Don’t forget to include a full bibliography  
+encyclopedia/encyclopaedia|n.|百科全书|I looked it up in the online encyclopedia  
+biography|n.|传记|I’m reading Elon Musk’s biography  
+documentary|n./adj.|纪录片；记录的|We watched a documentary about the Apollo programme  
+series|n.|系列；连续剧|Cosmos is my favourite documentary series  
 ---
-record|n.|记录；履历
-file|n./v.|档案；把...归档
-profile|n.|概述；人物简介；侧面轮廓
+record|n.|记录；唱片；履历|The spacecraft broke the distance record for human-made objects  
+file|n./v.|档案；文件。归档|Please file your assignment on the university server  
+profile|n.|简介；档案；侧面像|Her student profile lists astrophysics as her main interest  
 ---
-draft|n.|草稿；汇票；起草
-sketch|n./v.|概略；概述
-brochure|n.|小册子
-manual|n.|使用手册；指南；手工的
+draft|n./v.|草稿；草案。起草|I’m still working on the first draft of my thesis  
+sketch|n./v.|草图；概述。勾勒|He sketched a quick diagram of the solar system  
+brochure|n.|宣传册；小册子|The astronomy department published a new brochure for freshers  
+manual|n.|手册；指南|The telescope comes with a 200-page user manual  
 ---
-frame|n.|框架；眼镜框；构架
-index|n./v.|指数；索引；为...编索引
-catalogue/catalog|n.|目录
-category|n.|种类；类别；范畴
+frame|n.|框架；边框；（数据）帧|The camera captured 60 frames per second  
+index|n./v.|索引；指数。编索引|Check the book’s index for “black hole”  
+catalogue/catalog|n.|目录；星表|The Messier catalogue contains 110 deep-sky objects  
+category|n.|类别；种类|Exoplanets are divided into several categories  
 ---
-inventory|n.|库存；详细目录
-content|n./adj.|内容；目录；含量。满足的
-context|n.|上下文；语境；背景
-list|n./v.|一览表；目录。列举；把...列表
+inventory|n.|清单；库存目录|The lab keeps an inventory of all instruments  
+content|n.|内容；目录；含量|The table of contents is at the front of the book  
+context|n.|背景；语境；背景|You have to read the data in its scientific context  
+list|n./v.|名单；清单。列出|The short list of candidates will be announced tomorrow  
 ---
-chapter|n.|（书的）章；（人生或历史的）重要时刻
-volume|n.|卷；体积；容积；音量
-reel|n.|卷轴；卷筒；一卷胶卷
+chapter|n.|章；篇|Chapter 5 is about planetary formation  
+volume|n.|卷；册；体积|The encyclopedia has twenty volumes  
+reel|n.|卷；胶卷|A reel of old film showed the 1969 Moon landing  
 ---
-subject|n.|科目；主题；实验对象
-object|n./v.|物体；目标。反对
-major|n./v./adj.|[美]主修科目；专业。主修。主要的
-minor|n./adj.|[美]辅修科目。不严重的|My major is English, but I also have a minor in history.
+subject|n.|科目；主题；学科|Physics is my favourite subject  
+object|n./v.|物体；目标；宾语。反对|Jupiter is the largest object in the solar system  
+major|n./v./adj.|主修专业；主要的。主修|She majors in astronomy with a minor in mathematics  
+minor|n./adj.|辅修专业；次要的。辅修|He took planetary science as his minor  
 ---
-sociology|n.|社会学|A few years ago, sociology was the most popular subject for undergraduates
-politics|n.|政治学；政治；政治事务
-economics|n.|经济学
+sociology|n.|社会学|Many astronauts also studied sociology to understand team dynamics  
+politics|n.|政治学；政治|International politics affects funding for space programmes  
+economics|n.|经济学|She double-majored in physics and economics  
 ---
-marketing|n.|市场营销
-accounting|n.|会计
-audit|n./v.|审计。旁听；审计
-statistics|n.|统计学
+marketing|n.|市场营销|The university runs a strong space marketing campaign to attract students  
+accounting|n.|会计学；会计|Accurate accounting is essential for research grants  
+audit|n./v.|审计；旁听|Students may audit advanced courses without credit  
+statistics|n.|统计学|Astronomy students must take at least one statistics course  
 ---
-psychology|n.|心理学；心理特征
-philosophy|n.|哲学
-logic|n.|逻辑学；逻辑
+psychology|n.|心理学|Crew psychology is critical for long-duration Mars missions  
+philosophy|n.|哲学|She is reading philosophy of science this semester  
+logic|n.|逻辑学；逻辑|Formal logic helps in writing scientific proofs  
 ---
-biology|n.|生物学；生命机理
-physics|n.|物理学
-chemistry|n.|化学
+biology|n.|生物学|Astrobiology combines biology and astronomy  
+physics|n.|物理学|Newtonian physics explains most planetary motion  
+chemistry|n.|化学|Stellar chemistry reveals the chemical composition of stars
 ---
 agriculture|n.|农业；农学
 logistics|n.|物流；后勤
