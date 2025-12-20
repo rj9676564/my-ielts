@@ -1003,7 +1003,7 @@ electronics|n.|电子学；电子器件|That country wants to increase tariffs o
 ---
 maths/mathematics|n.|数学
 arithmetic|n.|算数
-geometry|n.|几何学
+geometry|n.|几何学|
 algebra|n.|代数
 calculus|n.|微积分；结实
 ---
