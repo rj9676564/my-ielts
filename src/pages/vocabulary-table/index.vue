@@ -201,6 +201,84 @@ function copyText(item: { word: string[]; pos: string; meaning: string }) {
   const text = `${item.word.join('/')} ${item.pos} ${item.meaning}`
   navigator.clipboard.writeText(text)
 }
+
+// Toast 功能
+const showToast = ref(false)
+const toastMessage = ref('')
+const toastTimer = ref<number | null>(null)
+
+function displayToast(message: string) {
+  toastMessage.value = message
+  showToast.value = true
+
+  if (toastTimer.value)
+    clearTimeout(toastTimer.value)
+
+  toastTimer.value = window.setTimeout(() => {
+    showToast.value = false
+    toastTimer.value = null
+  }, 2000)
+}
+
+onUnmounted(() => {
+  if (toastTimer.value)
+    clearTimeout(toastTimer.value)
+})
+
+// 长按检测
+const longPressTimers = new Map<string, number>()
+const isLongPressMap = new Map<string, boolean>()
+const LONG_PRESS_DURATION = 500 // 500ms
+
+function handleWordClick(e: MouseEvent | TouchEvent, word: string, meaning: string, href: string) {
+  e.preventDefault()
+  const key = word
+
+  // 如果是长按，直接跳转
+  if (isLongPressMap.get(key)) {
+    isLongPressMap.set(key, false)
+    window.open(href, '_blank')
+    return
+  }
+
+  // 短按显示 toast
+  displayToast(`${word}: ${meaning}`)
+}
+
+function handleWordStart(e: MouseEvent | TouchEvent, word: string, meaning: string, href: string) {
+  e.preventDefault()
+  const key = word
+  isLongPressMap.set(key, false)
+
+  const timer = window.setTimeout(() => {
+    isLongPressMap.set(key, true)
+    // 长按时跳转
+    window.open(href, '_blank')
+    longPressTimers.delete(key)
+  }, LONG_PRESS_DURATION)
+
+  longPressTimers.set(key, timer)
+}
+
+function handleWordEnd(e: MouseEvent | TouchEvent, word: string) {
+  e.preventDefault()
+  const key = word
+
+  if (longPressTimers.has(key)) {
+    clearTimeout(longPressTimers.get(key)!)
+    longPressTimers.delete(key)
+  }
+}
+
+function handleWordCancel(word: string) {
+  const key = word
+
+  if (longPressTimers.has(key)) {
+    clearTimeout(longPressTimers.get(key)!)
+    longPressTimers.delete(key)
+  }
+  isLongPressMap.set(key, false)
+}
 </script>
 
 <template>
@@ -412,10 +490,16 @@ function copyText(item: { word: string[]; pos: string; meaning: string }) {
                             <div>
                               <p v-for="w in row.item.word" :key="w">
                                 <a
-                                  class="hover:underline"
-                                  :title="`在剑桥词典中查询 ${w}`"
-                                  target="_blank"
+                                  class="cursor-pointer touch-none select-none hover:underline"
+                                  title="短按显示词意，长按跳转词典"
                                   :href="`https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`"
+                                  @click="handleWordClick($event, w, row.item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
+                                  @mousedown="handleWordStart($event, w, row.item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
+                                  @mouseup="handleWordEnd($event, w)"
+                                  @mouseleave="handleWordCancel(w)"
+                                  @touchstart="handleWordStart($event, w, row.item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
+                                  @touchend="handleWordEnd($event, w)"
+                                  @touchcancel="handleWordCancel(w)"
                                 >{{ w }}</a>
                               </p>
                               <div
@@ -490,10 +574,16 @@ function copyText(item: { word: string[]; pos: string; meaning: string }) {
                           <div>
                             <p v-for="w in item.word" :key="w">
                               <a
-                                class="hover:underline"
-                                :title="`在剑桥词典中查询 ${w}`"
-                                target="_blank"
+                                class="cursor-pointer touch-none select-none hover:underline"
+                                title="短按显示词意，长按跳转词典"
                                 :href="`https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`"
+                                @click="handleWordClick($event, w, item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
+                                @mousedown="handleWordStart($event, w, item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
+                                @mouseup="handleWordEnd($event, w)"
+                                @mouseleave="handleWordCancel(w)"
+                                @touchstart="handleWordStart($event, w, item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
+                                @touchend="handleWordEnd($event, w)"
+                                @touchcancel="handleWordCancel(w)"
                               >{{ w }}</a>
                             </p>
                             <div
@@ -526,5 +616,32 @@ function copyText(item: { word: string[]; pos: string; meaning: string }) {
         </div>
       </div>
     </div>
+
+    <!-- Toast 提示 -->
+    <Transition name="toast">
+      <div
+        v-if="showToast"
+        class="fixed bottom-4 left-1/2 z-50 transform rounded-lg bg-gray-900 px-6 py-3 text-sm text-white shadow-lg -translate-x-1/2 dark:bg-gray-700"
+      >
+        {{ toastMessage }}
+      </div>
+    </Transition>
   </div>
 </template>
+
+<style scoped>
+.toast-enter-active,
+.toast-leave-active {
+  transition: all 0.3s ease;
+}
+
+.toast-enter-from {
+  opacity: 0;
+  transform: translateX(-50%) translateY(20px);
+}
+
+.toast-leave-to {
+  opacity: 0;
+  transform: translateX(-50%) translateY(-20px);
+}
+</style>
