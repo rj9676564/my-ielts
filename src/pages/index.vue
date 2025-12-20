@@ -13,6 +13,12 @@ const menus = reactive([
     desc: '包含雅思词汇真经内容，按场景分组',
   },
   {
+    label: '词汇表格',
+    icon: 'i-carbon-table',
+    link: '/vocabulary-table',
+    desc: '可自定义显示列，支持全部/章节切换的词汇表格',
+  },
+  {
     label: '语法',
     icon: 'i-carbon-load-balancer-vpc ',
     link: '/grammar',

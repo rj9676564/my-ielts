@@ -11,6 +11,11 @@ const menus = reactive([
     link: '/vocabulary',
   },
   {
+    label: '词汇表格',
+    icon: 'i-carbon-table',
+    link: '/vocabulary-table',
+  },
+  {
     label: '语法',
     icon: 'i-carbon-load-balancer-vpc ',
     link: '/grammar',

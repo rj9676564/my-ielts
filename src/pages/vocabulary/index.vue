@@ -168,9 +168,9 @@ function onInputFoucsOut(e, item) {
 
 function getInputStyleClass(item) {
   const cls = {
-    error: 'ml-4 bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 inline-block p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500',
-    normal: 'ml-4 inline-block border border-gray-300 rounded-lg bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 focus:border-blue-500 dark:bg-gray-700 dark:text-white focus:ring-blue-500 dark:focus:border-blue-500 dark:focus:ring-blue-500 dark:placeholder-gray-400',
-    success: 'ml-4 bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 inline-block p-2.5 dark:bg-gray-700 dark:border-green-500',
+    error: 'ml-2 sm:ml-4 bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-xs rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 inline-block p-1.5 sm:p-2.5 sm:text-sm dark:text-red-500 dark:placeholder-red-500 dark:border-red-500',
+    normal: 'ml-2 sm:ml-4 inline-block border border-gray-300 rounded-lg bg-gray-50 p-1.5 text-xs text-gray-900 sm:p-2.5 sm:text-sm dark:border-gray-600 focus:border-blue-500 dark:bg-gray-700 dark:text-white focus:ring-blue-500 dark:focus:border-blue-500 dark:focus:ring-blue-500 dark:placeholder-gray-400',
+    success: 'ml-2 sm:ml-4 bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-xs rounded-lg focus:ring-green-500 focus:border-green-500 inline-block p-1.5 sm:p-2.5 sm:text-sm dark:bg-gray-700 dark:border-green-500',
   }
   if (isFinishTraining.value) {
     if (item.spellError)
@@ -192,6 +192,37 @@ function copyAllError() {
   }
   navigator.clipboard.writeText(errorWords.join('\n\n'))
 }
+
+function toggleWordVisibility(item) {
+  // 确保 showMeaning 属性存在
+  if (item.showMeaning === undefined)
+    item.showMeaning = false
+
+  // 如果原词已显示
+  const isSourceVisible = item.showSource || isShowSource.value
+  const isMeaningHidden = !isShowMeaning.value && !item.showMeaning
+  const isMeaningShown = item.showMeaning === true
+
+  if (isSourceVisible) {
+    // 原词已显示时，切换词意显示/隐藏
+    if (isMeaningHidden) {
+      // 词意隐藏，显示词意
+      item.showMeaning = true
+    }
+    else if (isMeaningShown) {
+      // 词意已显示，隐藏词意
+      item.showMeaning = false
+    }
+    else {
+      // 全局词意显示开启，切换原词显示
+      item.showSource = !item.showSource
+    }
+  }
+  else {
+    // 原词未显示，切换原词显示
+    item.showSource = !item.showSource
+  }
+}
 </script>
 
 <template>
@@ -200,16 +231,16 @@ function copyAllError() {
       <!-- Card header -->
       <div class="items-center justify-between lg:flex">
         <div class="mb-4 lg:mb-0">
-          <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+          <h3 class="mb-2 text-lg font-bold text-gray-900 sm:text-xl dark:text-white">
             雅思词汇真经
           </h3>
-          <span class="text-base font-normal text-gray-500 dark:text-gray-400">涵盖雅思必备核心词，逻辑词群记忆法</span>
+          <span class="text-sm font-normal text-gray-500 sm:text-base dark:text-gray-400">涵盖雅思必备核心词，逻辑词群记忆法</span>
         </div>
         <div class="items-center sm:flex">
-          <div class="flex items-center">
+          <div class="flex flex-wrap items-center gap-2 sm:gap-0">
             <select
               v-model="category"
-              class="block w-full flex-1 border border-gray-300 rounded-lg bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 focus:border-blue-500 dark:bg-gray-700 dark:text-white focus:ring-blue-500 dark:focus:border-blue-500 dark:focus:ring-blue-500 dark:placeholder-gray-400"
+              class="block w-full flex-1 border border-gray-300 rounded-lg bg-gray-50 p-2 text-sm text-gray-900 sm:w-auto sm:flex-none dark:border-gray-600 focus:border-blue-500 dark:bg-gray-700 sm:p-2.5 dark:text-white focus:ring-blue-500 dark:focus:border-blue-500 dark:focus:ring-blue-500 dark:placeholder-gray-400"
             >
               <!-- <option value="">
                 全部章节
@@ -231,33 +262,33 @@ function copyAllError() {
                 class="block w-full border border-gray-300 rounded-lg bg-gray-50 p-2.5 pl-10 text-sm text-gray-900 dark:border-gray-600 focus:border-blue-500 dark:bg-gray-700 dark:text-white focus:ring-blue-500 dark:focus:border-blue-500 dark:focus:ring-blue-500 dark:placeholder-gray-400"
                 placeholder="Search">
             </div> -->
-            <label class="ml-2 inline-flex cursor-pointer items-center">
+            <label class="inline-flex cursor-pointer items-center sm:ml-2">
               <input v-model="isTrainingModel" type="checkbox" class="peer sr-only">
               <div
                 class="peer relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:border after:border-gray-300 dark:border-gray-600 after:rounded-full after:bg-white dark:bg-gray-700 peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:peer-focus:ring-blue-800 rtl:peer-checked:after:-translate-x-full"
               />
-              <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">练习模式</span>
+              <span class="ms-2 text-xs font-medium text-gray-900 sm:ms-3 sm:text-sm dark:text-gray-300">练习模式</span>
             </label>
-            <label v-if="isTrainingModel" class="ml-2 inline-flex cursor-pointer items-center">
+            <label v-if="isTrainingModel" class="inline-flex cursor-pointer items-center sm:ml-2">
               <input v-model="isShowMeaning" type="checkbox" class="peer sr-only">
               <div
                 class="peer relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:border after:border-gray-300 dark:border-gray-600 after:rounded-full after:bg-white dark:bg-gray-700 peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:peer-focus:ring-blue-800 rtl:peer-checked:after:-translate-x-full"
               />
-              <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">释义</span>
+              <span class="ms-2 text-xs font-medium text-gray-900 sm:ms-3 sm:text-sm dark:text-gray-300">释义</span>
             </label>
-            <label v-if="isTrainingModel" class="ml-2 inline-flex cursor-pointer items-center">
+            <label v-if="isTrainingModel" class="inline-flex cursor-pointer items-center sm:ml-2">
               <input v-model="isShowSource" type="checkbox" class="peer sr-only">
               <div
                 class="peer relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:border after:border-gray-300 dark:border-gray-600 after:rounded-full after:bg-white dark:bg-gray-700 peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:peer-focus:ring-blue-800 rtl:peer-checked:after:-translate-x-full"
               />
-              <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">原词</span>
+              <span class="ms-2 text-xs font-medium text-gray-900 sm:ms-3 sm:text-sm dark:text-gray-300">原词</span>
             </label>
-            <label v-if="isTrainingModel" class="ml-2 inline-flex cursor-pointer items-center">
+            <label v-if="isTrainingModel" class="inline-flex cursor-pointer items-center sm:ml-2">
               <input v-model="isAutoPlayWordAudio" type="checkbox" class="peer sr-only">
               <div
                 class="peer relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:border after:border-gray-300 dark:border-gray-600 after:rounded-full after:bg-white dark:bg-gray-700 peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:peer-focus:ring-blue-800 rtl:peer-checked:after:-translate-x-full"
               />
-              <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">自动播放</span>
+              <span class="ms-2 text-xs font-medium text-gray-900 sm:ms-3 sm:text-sm dark:text-gray-300">自动播放</span>
             </label>
           </div>
         </div>
@@ -270,25 +301,25 @@ function copyAllError() {
               <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-600">
                 <thead class="bg-gray-50 dark:bg-gray-700">
                   <tr>
-                    <th class="p-4 text-left text-xs font-medium tracking-wider text-gray-500 dark:text-white">
+                    <th class="p-2 text-left text-xs font-medium tracking-wider text-gray-500 sm:p-4 dark:text-white">
                       #
                     </th>
-                    <th class="p-4 text-xs font-medium tracking-wider text-gray-500 dark:text-white">
+                    <th class="p-2 text-xs font-medium tracking-wider text-gray-500 sm:p-4 dark:text-white">
                       <br>
                     </th>
-                    <th class="p-4 text-left text-xs font-medium tracking-wider text-gray-500 dark:text-white">
+                    <th class="p-2 text-left text-xs font-medium tracking-wider text-gray-500 sm:p-4 dark:text-white">
                       词
                     </th>
-                    <th class="w-0 text-left text-xs font-medium text-gray-500 dark:text-white">
+                    <th class="w-0 p-2 text-left text-xs font-medium text-gray-500 sm:p-4 dark:text-white">
                       词性
                     </th>
-                    <th class="p-4 text-left text-xs font-medium tracking-wider text-gray-500 dark:text-white">
+                    <th class="p-2 text-left text-xs font-medium tracking-wider text-gray-500 sm:p-4 dark:text-white">
                       词义
                     </th>
-                    <th class="p-4 text-left text-xs font-medium tracking-wider text-gray-500 dark:text-white">
+                    <th class="p-2 text-left text-xs font-medium tracking-wider text-gray-500 sm:p-4 dark:text-white">
                       例句
                     </th>
-                    <th class="p-4 text-left text-xs font-medium tracking-wider text-gray-500 dark:text-white">
+                    <th class="p-2 text-left text-xs font-medium tracking-wider text-gray-500 sm:p-4 dark:text-white">
                       拓展
                     </th>
                   </tr>
@@ -297,15 +328,15 @@ function copyAllError() {
                   <tr class="bg-hex-f3f3f3">
                     <td
                       colspan="7"
-                      class="px-4 py-6 text-sm font-normal text-gray-900 dark:bg-gray-500 dark:text-white"
+                      class="px-2 py-4 text-xs font-normal text-gray-900 dark:bg-gray-500 sm:px-4 sm:py-6 sm:text-sm dark:text-white"
                     >
-                      <div class="flex flex-row">
+                      <div class="flex flex-col gap-2 sm:flex-row">
                         <div class="flex flex-1 items-center">
-                          <span class="text-lg">{{ category }}</span>
-                          （ {{ refVocabulary[category].groupCount }} 组 {{ refVocabulary[category].wordCount }} 个词 ）
+                          <span class="text-base sm:text-lg">{{ category }}</span>
+                          <span class="ml-1 text-xs sm:text-sm">（ {{ refVocabulary[category].groupCount }} 组 {{ refVocabulary[category].wordCount }} 个词 ）</span>
                         </div>
                         <div class="justify-items-end">
-                          <audio controls class="chapter">
+                          <audio controls class="chapter max-w-full">
                             <source :src="`vocabulary/audio/${refVocabulary[category].audio}`" type="audio/mpeg">
                           </audio>
                         </div>
@@ -319,30 +350,30 @@ function copyAllError() {
                       :key="item.id"
                       :class="{ 'bg-gray-50 dark:bg-gray-700': item.id % 2 === 0, [`group-color-${i % 15}`]: true }" class="text-sm text-gray-900 dark:text-white"
                     >
-                      <td class="p-4">
+                      <td class="p-2 text-xs sm:p-4 sm:text-sm">
                         {{ item.id }}
                       </td>
-                      <td>
+                      <td class="p-2 sm:p-4">
                         <i
-                          class="i-ph-speaker-simple-high-bold inline-block cursor-pointer"
+                          class="i-ph-speaker-simple-high-bold inline-block cursor-pointer text-base sm:text-lg"
                           @click="play(`vocabulary/audio/${category}/${item.word[0]}.mp3`)"
                         />
 
                         <template v-if="isTrainingModel">
                           <i
-                            :class="`${item.showSource ? 'i-ph-eye-slash-bold' : 'i-ph-eye-bold'} inline-block cursor-pointer ml-4`"
-                            title="显示原词" @click="item.showSource = !item.showSource"
+                            :class="`${(item.showSource || isShowSource) && item.showMeaning ? 'i-ph-eye-slash-bold' : 'i-ph-eye-bold'} inline-block cursor-pointer ml-2 text-base sm:ml-4 sm:text-lg`"
+                            :title="(item.showSource || isShowSource) && item.showMeaning ? '隐藏词意' : '显示原词'" @click="toggleWordVisibility(item)"
                           />
                           <input
                             :id="item.id" autocomplete="off" :class="getInputStyleClass(item)"
                             type="text"
-                            @focusout="onInputFoucsOut($event, item)" 
-                            @focusin="onInputFoucsIn($event, `vocabulary/audio/${category}/${item.word[0]}.mp3`)" 
+                            @focusout="onInputFoucsOut($event, item)"
+                            @focusin="onInputFoucsIn($event, `vocabulary/audio/${category}/${item.word[0]}.mp3`)"
                             @keydown="onInputKeydown"
                           >
                         </template>
                       </td>
-                      <td class="group relative whitespace-nowrap p-4">
+                      <td class="group relative p-2 text-xs sm:whitespace-nowrap sm:p-4 sm:text-sm">
                         <div v-if="!isTrainingModel || item.showSource || (isTrainingModel && isOnlyShowErrors && item.spellError) || isShowSource">
                           <p v-for="w in item.word" :key="w">
                             <a
@@ -355,20 +386,20 @@ function copyAllError() {
                             class="absolute right-0 top-0 hidden h-100% items-center group-hover:flex"
                             @click="copyText(item)"
                           >
-                            <i class="i-ph-copy block cursor-pointer px-4" />
+                            <i class="i-ph-copy block cursor-pointer px-2 sm:px-4" />
                           </div>
                         </div>
                       </td>
-                      <td style="font-style: italic; font-family: times;">
+                      <td class="p-2 text-xs sm:p-4 sm:text-sm" style="font-style: italic; font-family: times;">
                         {{ item.pos }}
                       </td>
-                      <td class="p-4">
-                        {{ isShowMeaning ? item.meaning : '' }}
+                      <td class="p-2 text-xs sm:p-4 sm:text-sm">
+                        {{ (isShowMeaning || (item.showMeaning === true)) ? item.meaning : '' }}
                       </td>
-                      <td class="p-4">
+                      <td class="p-2 text-xs sm:p-4 sm:text-sm">
                         {{ isTrainingModel ? '' : item.example }}
                       </td>
-                      <td class="p-4">
+                      <td class="p-2 text-xs sm:p-4 sm:text-sm">
                         {{ isTrainingModel ? '' : item.extra }}
                       </td>
                     </tr>
@@ -380,30 +411,30 @@ function copyAllError() {
         </div>
       </div>
       <!-- Card Footer -->
-      <div class="flex items-center justify-between pt-3 sm:pt-6">
+      <div class="flex flex-col gap-3 pt-3 sm:flex-row sm:items-center sm:justify-between sm:pt-6">
         <div>
-          <p v-if="isTrainingModel">
+          <p v-if="isTrainingModel" class="text-xs sm:text-sm">
             {{ trainingStats }}
           </p>
         </div>
-        <div v-if="isTrainingModel" class="flex-shrink-0">
+        <div v-if="isTrainingModel" class="flex flex-wrap gap-2 sm:flex-shrink-0 sm:gap-0">
           <button
             type="button"
-            class="rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white dark:bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="flex-1 rounded-lg bg-blue-700 px-3 py-2 text-xs font-medium text-white sm:flex-none dark:bg-blue-600 hover:bg-blue-800 sm:px-5 sm:py-2.5 sm:text-sm focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             @click="isFinishTraining = true"
           >
             完成练习
           </button>
           <button
             type="button"
-            class="ml-2 rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white dark:bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="flex-1 rounded-lg bg-blue-700 px-3 py-2 text-xs font-medium text-white sm:ml-2 sm:flex-none dark:bg-blue-600 hover:bg-blue-800 sm:px-5 sm:py-2.5 sm:text-sm focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             @click="isOnlyShowErrors = !isOnlyShowErrors"
           >
             {{ isOnlyShowErrors ? '展示所有' : '仅展示错词' }}
           </button>
           <button
             type="button"
-            class="ml-2 rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white dark:bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="flex-1 rounded-lg bg-blue-700 px-3 py-2 text-xs font-medium text-white sm:ml-2 sm:flex-none dark:bg-blue-600 hover:bg-blue-800 sm:px-5 sm:py-2.5 sm:text-sm focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             @click="copyAllError"
           >
             拷贝错词
