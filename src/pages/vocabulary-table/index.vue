@@ -227,31 +227,30 @@ onUnmounted(() => {
 
 // 长按检测
 const longPressTimers = new Map<string, number>()
-const isLongPressMap = new Map<string, boolean>()
+const hasLongPressTriggered = new Map<string, boolean>()
 const LONG_PRESS_DURATION = 500 // 500ms
 
-function handleWordClick(e: MouseEvent | TouchEvent, word: string, meaning: string, href: string) {
-  e.preventDefault()
+function handleWordClick(e: MouseEvent | TouchEvent, word: string, meaning: string, _href: string) {
   const key = word
 
-  // 如果是长按，直接跳转
-  if (isLongPressMap.get(key)) {
-    isLongPressMap.set(key, false)
-    window.open(href, '_blank')
+  // 如果长按已经触发，不处理点击
+  if (hasLongPressTriggered.get(key)) {
+    hasLongPressTriggered.set(key, false)
+    e.preventDefault()
     return
   }
 
   // 短按显示 toast
+  e.preventDefault()
   displayToast(`${word}: ${meaning}`)
 }
 
 function handleWordStart(e: MouseEvent | TouchEvent, word: string, meaning: string, href: string) {
-  e.preventDefault()
   const key = word
-  isLongPressMap.set(key, false)
+  hasLongPressTriggered.set(key, false)
 
   const timer = window.setTimeout(() => {
-    isLongPressMap.set(key, true)
+    hasLongPressTriggered.set(key, true)
     // 长按时跳转
     window.open(href, '_blank')
     longPressTimers.delete(key)
@@ -260,13 +259,20 @@ function handleWordStart(e: MouseEvent | TouchEvent, word: string, meaning: stri
   longPressTimers.set(key, timer)
 }
 
-function handleWordEnd(e: MouseEvent | TouchEvent, word: string) {
-  e.preventDefault()
+function handleWordEnd(e: MouseEvent | TouchEvent, word: string, meaning: string) {
   const key = word
 
+  // 如果长按已经触发，不需要处理
+  if (hasLongPressTriggered.get(key))
+    return
+
+  // 如果计时器还在，说明是短按
   if (longPressTimers.has(key)) {
     clearTimeout(longPressTimers.get(key)!)
     longPressTimers.delete(key)
+    // 直接显示 toast（不等待 click 事件，因为移动端可能不会触发 click）
+    e.preventDefault()
+    displayToast(`${word}: ${meaning}`)
   }
 }
 
@@ -277,7 +283,7 @@ function handleWordCancel(word: string) {
     clearTimeout(longPressTimers.get(key)!)
     longPressTimers.delete(key)
   }
-  isLongPressMap.set(key, false)
+  hasLongPressTriggered.set(key, false)
 }
 </script>
 
@@ -495,10 +501,10 @@ function handleWordCancel(word: string) {
                                   :href="`https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`"
                                   @click="handleWordClick($event, w, row.item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
                                   @mousedown="handleWordStart($event, w, row.item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
-                                  @mouseup="handleWordEnd($event, w)"
+                                  @mouseup="handleWordEnd($event, w, row.item.meaning)"
                                   @mouseleave="handleWordCancel(w)"
                                   @touchstart="handleWordStart($event, w, row.item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
-                                  @touchend="handleWordEnd($event, w)"
+                                  @touchend="handleWordEnd($event, w, row.item.meaning)"
                                   @touchcancel="handleWordCancel(w)"
                                 >{{ w }}</a>
                               </p>
@@ -579,10 +585,10 @@ function handleWordCancel(word: string) {
                                 :href="`https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`"
                                 @click="handleWordClick($event, w, item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
                                 @mousedown="handleWordStart($event, w, item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
-                                @mouseup="handleWordEnd($event, w)"
+                                @mouseup="handleWordEnd($event, w, item.meaning)"
                                 @mouseleave="handleWordCancel(w)"
                                 @touchstart="handleWordStart($event, w, item.meaning, `https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${w}`)"
-                                @touchend="handleWordEnd($event, w)"
+                                @touchend="handleWordEnd($event, w, item.meaning)"
                                 @touchcancel="handleWordCancel(w)"
                               >{{ w }}</a>
                             </p>
