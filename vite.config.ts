@@ -15,6 +15,19 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 3333,
   },
+  build: {
+    rollupOptions: {
+      output: {
+        // 确保 manifest.json 和 sw.js 被正确复制
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === 'manifest.json' || assetInfo.name === 'sw.js') {
+            return '[name][extname]'
+          }
+          return 'assets/[name]-[hash][extname]'
+        },
+      },
+    },
+  },
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,

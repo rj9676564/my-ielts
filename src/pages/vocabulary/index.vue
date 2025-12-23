@@ -367,8 +367,8 @@ function toggleWordVisibility(item) {
                           <input
                             :id="item.id" autocomplete="off" :class="getInputStyleClass(item)"
                             type="text"
-                            @focusout="onInputFoucsOut($event, item)"
-                            @focusin="onInputFoucsIn($event, `vocabulary/audio/${category}/${item.word[0]}.mp3`)"
+                            @focusout="onInputFoucsOut($event, item)" 
+                            @focusin="onInputFoucsIn($event, `vocabulary/audio/${category}/${item.word[0]}.mp3`)" 
                             @keydown="onInputKeydown"
                           >
                         </template>

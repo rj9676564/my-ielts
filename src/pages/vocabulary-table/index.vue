@@ -5,6 +5,7 @@ import vocabulary from '../vocabulary/vocabulary'
 const CHAPTER_KEY = 'vocabulary_table_chapter'
 const COLUMN_VISIBILITY_KEY = 'vocabulary_table_columns'
 const VIRTUAL_SCROLL_KEY = 'vocabulary_table_virtual_scroll'
+const FULLSCREEN_KEY = 'vocabulary_table_fullscreen'
 
 // 列显示控制
 const columnVisibility = ref({
@@ -19,6 +20,9 @@ const columnVisibility = ref({
 
 // 虚拟滚动开关
 const enableVirtualScroll = ref(true)
+
+// 全屏模式
+const isFullscreen = ref(false)
 
 // 从 localStorage 恢复列显示状态
 onMounted(() => {
@@ -35,6 +39,13 @@ onMounted(() => {
   const virtualScrollSaved = localStorage.getItem(VIRTUAL_SCROLL_KEY)
   if (virtualScrollSaved !== null)
     enableVirtualScroll.value = virtualScrollSaved === 'true'
+
+  const fullscreenSaved = localStorage.getItem(FULLSCREEN_KEY)
+  if (fullscreenSaved !== null)
+    isFullscreen.value = fullscreenSaved === 'true'
+
+  // 应用全屏状态
+  updateFullscreenState()
 })
 
 // 保存列显示状态到 localStorage
@@ -44,6 +55,34 @@ watch(columnVisibility, (newVal) => {
 
 watch(enableVirtualScroll, (newVal) => {
   localStorage.setItem(VIRTUAL_SCROLL_KEY, String(newVal))
+})
+
+watch(isFullscreen, (newVal) => {
+  localStorage.setItem(FULLSCREEN_KEY, String(newVal))
+  updateFullscreenState()
+})
+
+// 更新全屏状态
+function updateFullscreenState() {
+  if (isFullscreen.value) {
+    document.body.classList.add('vocabulary-table-fullscreen')
+    document.documentElement.classList.add('vocabulary-table-fullscreen')
+  }
+  else {
+    document.body.classList.remove('vocabulary-table-fullscreen')
+    document.documentElement.classList.remove('vocabulary-table-fullscreen')
+  }
+}
+
+// 切换全屏
+function toggleFullscreen() {
+  isFullscreen.value = !isFullscreen.value
+}
+
+// 组件卸载时清理
+onUnmounted(() => {
+  document.body.classList.remove('vocabulary-table-fullscreen')
+  document.documentElement.classList.remove('vocabulary-table-fullscreen')
 })
 
 // 章节选择
@@ -288,10 +327,10 @@ function handleWordCancel(word: string) {
 </script>
 
 <template>
-  <div class="px-4 pt-6 2xl:px-0">
-    <div class="border border-gray-200 rounded-lg bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
+  <div :class="{ 'vocabulary-table-fullscreen-container': isFullscreen }" class="px-0 pt-0 2xl:px-0">
+    <div :class="{ 'vocabulary-table-fullscreen-card': isFullscreen }" class="border border-gray-200 rounded-lg bg-white p-2 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
       <!-- Card header -->
-      <div class="items-center justify-between lg:flex">
+      <div v-if="!isFullscreen" class="items-center justify-between lg:flex">
         <div class="mb-4 lg:mb-0">
           <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
             词汇表格（自定义列）
@@ -300,6 +339,15 @@ function handleWordCancel(word: string) {
         </div>
         <div class="items-center sm:flex">
           <div class="flex flex-wrap items-center gap-4">
+            <!-- 全屏按钮 -->
+            <button
+              type="button"
+              class="inline-flex items-center rounded-lg bg-blue-700 px-3 py-1.5 text-sm font-medium text-white dark:bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              @click="toggleFullscreen"
+            >
+              <i class="i-ph-arrows-out mr-1 inline-block" />
+              全屏
+            </button>
             <!-- 全部/章节切换 -->
             <label class="inline-flex cursor-pointer items-center">
               <input v-model="showAllChapters" type="checkbox" class="peer sr-only">
@@ -329,6 +377,15 @@ function handleWordCancel(word: string) {
               <span class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">虚拟滚动</span>
             </label>
 
+            <!-- 全屏按钮 -->
+            <!-- <button
+              type="button"
+              class="inline-flex items-center rounded-lg bg-blue-700 px-3 py-1.5 text-sm font-medium text-white dark:bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              @click="toggleFullscreen"
+            >
+              <i class="i-ph-arrows-out mr-1 inline-block" />
+              全屏
+            </button> -->
             <!-- 列显示控制 -->
             <div class="flex flex-wrap items-center gap-2 border-l border-gray-300 pl-4 dark:border-gray-600">
               <span class="text-sm font-medium text-gray-700 dark:text-gray-300">显示列：</span>
@@ -386,10 +443,52 @@ function handleWordCancel(word: string) {
         </div>
       </div>
 
+      <!-- 全屏模式下的控制栏 -->
+      <div v-if="isFullscreen" class="mb-4 flex shrink-0 items-center justify-between border-b border-gray-200 pb-4 dark:border-gray-700">
+        <div class="flex items-center">
+          <button
+            type="button"
+            class="w-26 inline-flex items-center rounded-lg bg-gray-700 px-3 py-1.5 text-sm font-medium text-white dark:bg-gray-600 hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            @click="toggleFullscreen"
+          >
+            <i class="i-ph-arrows-in mr-1 inline-block" />
+            退出全屏
+          </button>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <!-- 全部/章节切换 -->
+          <label class="inline-flex cursor-pointer items-center">
+            <input v-model="showAllChapters" type="checkbox" class="peer sr-only">
+            <div
+              class="peer relative h-5 w-9 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-4 after:w-4 after:border after:border-gray-300 dark:border-gray-600 after:rounded-full after:bg-white dark:bg-gray-700 peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:peer-focus:ring-blue-800"
+            />
+            <span class="ms-2 text-xs font-medium text-gray-900 dark:text-gray-300">全部章节</span>
+          </label>
+          <!-- 章节选择（仅在非全部模式显示） -->
+          <select
+            v-if="!showAllChapters"
+            v-model="category"
+            class="block border border-gray-300 rounded-lg bg-gray-50 p-2 text-xs text-gray-900 dark:border-gray-600 focus:border-blue-500 dark:bg-gray-700 dark:text-white focus:ring-blue-500 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+          >
+            <option v-for="(_, k) in vocabulary" :key="k" :value="k">
+              {{ k }}
+            </option>
+          </select>
+          <!-- 虚拟滚动开关 -->
+          <label class="inline-flex cursor-pointer items-center">
+            <input v-model="enableVirtualScroll" type="checkbox" class="peer sr-only">
+            <div
+              class="peer relative h-5 w-9 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-4 after:w-4 after:border after:border-gray-300 dark:border-gray-600 after:rounded-full after:bg-white dark:bg-gray-700 peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:peer-focus:ring-blue-800"
+            />
+            <span class="ms-1 text-xs font-medium text-gray-700 dark:text-gray-300">虚拟滚动</span>
+          </label>
+        </div>
+      </div>
+
       <!-- Table -->
-      <div class="mt-6 flex flex-col">
-        <div class="rounded-lg shadow sm:rounded-lg">
-          <div class="overflow-hidden">
+      <div :class="{ 'mt-6': !isFullscreen, 'flex-1 overflow-hidden': isFullscreen }" class="flex flex-col">
+        <div :class="{ 'rounded-lg shadow sm:rounded-lg': !isFullscreen, 'h-full flex flex-col': isFullscreen }">
+          <div :class="{ 'overflow-hidden': !isFullscreen, 'flex-1 overflow-hidden flex flex-col': isFullscreen }">
             <!-- 表头容器（支持水平滚动） -->
             <div
               ref="headerContainer"
@@ -449,8 +548,9 @@ function handleWordCancel(word: string) {
             <div
               v-if="enableVirtualScroll"
               ref="scrollContainer"
+              :class="{ 'flex-1': isFullscreen }"
               class="overflow-auto bg-white dark:bg-gray-800"
-              style="max-height: 600px;"
+              :style="isFullscreen ? 'height: 100%;' : 'max-height: 600px;'"
               @scroll="handleScroll"
             >
               <div :style="{ height: `${totalHeight}px`, position: 'relative' }">
@@ -536,7 +636,7 @@ function handleWordCancel(word: string) {
               </div>
             </div>
             <!-- 非虚拟滚动模式（原始渲染） -->
-            <div v-else class="overflow-x-auto bg-white dark:bg-gray-800">
+            <div v-else :class="{ 'flex-1 overflow-auto': isFullscreen }" class="overflow-x-auto bg-white dark:bg-gray-800">
               <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-600" style="min-width: 800px;">
                 <tbody>
                   <template v-for="(categoryData, categoryKey) in displayedVocabulary" :key="categoryKey">
@@ -649,5 +749,56 @@ function handleWordCancel(word: string) {
 .toast-leave-to {
   opacity: 0;
   transform: translateX(-50%) translateY(-20px);
+}
+
+/* 全屏模式样式 */
+.vocabulary-table-fullscreen-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 0;
+  background: white;
+  overflow: hidden;
+}
+
+.dark .vocabulary-table-fullscreen-container {
+  background: #1f2937;
+}
+
+.vocabulary-table-fullscreen-card {
+  border: none;
+  border-radius: 0;
+  padding: 1rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 确保全屏模式下的控制栏可见 */
+.vocabulary-table-fullscreen-card > div:first-of-type {
+  flex-shrink: 0;
+  z-index: 1;
+}
+</style>
+
+<style>
+/* 全局样式：隐藏导航栏和页脚 */
+.vocabulary-table-fullscreen header,
+.vocabulary-table-fullscreen footer {
+  display: none !important;
+}
+
+.vocabulary-table-fullscreen .flex.flex-1.overflow-hidden {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.vocabulary-table-fullscreen .relative.mx-auto {
+  max-width: 100% !important;
+  padding: 0 !important;
 }
 </style>

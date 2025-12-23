@@ -1,4 +1,6 @@
 <script setup lang="ts" generic="T extends any, O extends any">
+import { usePWA } from '~/composables/usePWA'
+
 const menus = reactive([
   {
     label: '首页',
@@ -42,6 +44,81 @@ const menus = reactive([
   },
 ])
 const showMobileMenu = ref(false)
+
+// PWA 安装功能
+const { isInstallable, isInstalled, install } = usePWA()
+
+async function handleInstall() {
+  await install()
+}
+
+function checkPWAStatus() {
+  // eslint-disable-next-line no-console
+  console.group('🔍 PWA 状态检查')
+
+  // 检查 Service Worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistration().then((registration) => {
+      if (registration) {
+        // eslint-disable-next-line no-console
+        console.log('✅ Service Worker:', registration.scope, registration.active?.state)
+      }
+      else {
+        console.warn('⚠️ Service Worker 未注册')
+      }
+    })
+  }
+  else {
+    console.error('❌ Service Worker 不支持')
+  }
+
+  // 检查 Manifest
+  fetch('/manifest.json')
+    .then((res) => {
+      if (res.ok) {
+        // eslint-disable-next-line no-console
+        console.log('✅ Manifest.json 可访问')
+        return res.json()
+      }
+      throw new Error(`HTTP ${res.status}`)
+    })
+    .then((manifest) => {
+      // eslint-disable-next-line no-console
+      console.log('✅ Manifest 内容:', manifest)
+    })
+    .catch((err) => {
+      console.error('❌ Manifest 加载失败:', err)
+    })
+
+  // 检查安装状态
+  if (window.matchMedia('(display-mode: standalone)').matches) {
+    // eslint-disable-next-line no-console
+    console.log('✅ 应用已安装（standalone 模式）')
+  }
+  else {
+    // eslint-disable-next-line no-console
+    console.log('ℹ️ 应用未安装（浏览器模式）')
+  }
+
+  // 检查 beforeinstallprompt 事件
+  // eslint-disable-next-line no-console
+  console.log('ℹ️ 等待 beforeinstallprompt 事件...')
+  // eslint-disable-next-line no-console
+  console.log('ℹ️ 如果长时间没有提示，可能是：')
+  // eslint-disable-next-line no-console
+  console.log('   1. Chrome 在 localhost 上对 PWA 支持有限')
+  // eslint-disable-next-line no-console
+  console.log('   2. 需要部署到 HTTPS 环境')
+  // eslint-disable-next-line no-console
+  console.log('   3. 需要满足所有 PWA 安装条件')
+
+  // eslint-disable-next-line no-console
+  console.groupEnd()
+
+  // 显示提示
+  // eslint-disable-next-line no-alert
+  alert('PWA 状态检查完成，请查看浏览器控制台（F12）')
+}
 </script>
 
 <template>
@@ -73,6 +150,28 @@ const showMobileMenu = ref(false)
           </div>
         </div>
         <div class="flex items-center justify-between lg:order-2">
+          <!-- PWA 安装按钮 -->
+          <button
+            v-if="isInstallable && !isInstalled"
+            type="button"
+            class="ml-2 rounded-lg bg-blue-600 px-3 py-1.5 text-sm font-medium text-white dark:bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-600 dark:focus:ring-blue-800"
+            title="安装应用到设备"
+            @click="handleInstall"
+          >
+            <i class="i-carbon-download mr-1 inline-block" />
+            安装应用
+          </button>
+          <!-- PWA 调试按钮（开发环境） -->
+          <button
+            v-if="!isInstallable && !isInstalled"
+            type="button"
+            class="ml-2 rounded-lg bg-gray-500 px-2 py-1 text-xs font-medium text-white dark:bg-gray-600 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:hover:bg-gray-700"
+            title="检查 PWA 状态"
+            @click="checkPWAStatus"
+          >
+            <i class="i-carbon-information mr-1 inline-block" />
+            检查 PWA
+          </button>
           <a
             href="https://github.com/hefengxian/my-ielts"
             target="_blank"
