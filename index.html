@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./favicon.png" type="image/svg+xml">
+  <link rel="icon" href="./favicon.png" type="image/png">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="My IELTS">
+  <link rel="apple-touch-icon" href="./favicon.png">
   <title>My IELTS</title>
   <meta name="description" content="Everything in my IELTS preparetion">
-  <script type="module" crossorigin src="./assets/index-628a24f8.js"></script>
-  <link rel="stylesheet" href="./assets/index-2cc559d1.css">
+  <script type="module" crossorigin src="./assets/index-bf187d6a.js"></script>
+  <link rel="stylesheet" href="./assets/index-07b7bd8f.css">
 </head>
 <body>
   <div id="app"></div>
@@ -23,5 +29,44 @@
     })()
   </script>
   
+  <script>
+    // 注册 Service Worker
+    if ('serviceWorker' in navigator) {
+      // 立即注册，不等待 load 事件
+      navigator.serviceWorker.register('/sw.js', { scope: '/' })
+        .then((registration) => {
+          console.log('✅ Service Worker registered:', registration.scope)
+          console.log('✅ Service Worker state:', registration.active?.state || registration.installing?.state || 'pending')
+    
+          // 检查更新
+          registration.addEventListener('updatefound', () => {
+            const newWorker = registration.installing
+            if (newWorker) {
+              newWorker.addEventListener('statechange', () => {
+                console.log('Service Worker state changed:', newWorker.state)
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller)
+                  console.log('New SW available, reload to update')
+              })
+            }
+          })
+        })
+        .catch((registrationError) => {
+          console.error('❌ Service Worker registration failed:', registrationError)
+        })
+    
+      // 检查 manifest
+      fetch('/manifest.json')
+        .then(res => res.json())
+        .then((manifest) => {
+          console.log('✅ Manifest loaded:', manifest.name)
+        })
+        .catch((err) => {
+          console.error('❌ Manifest load failed:', err)
+        })
+    }
+    else {
+      console.warn('⚠️ Service Worker not supported')
+    }
+  </script>
 </body>
 </html>
